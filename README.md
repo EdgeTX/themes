@@ -1,2 +1,2 @@
 # themes
-Themes directory for EdgeTX
+Themes directory for third party themes for EdgeTX
