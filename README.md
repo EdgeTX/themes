@@ -2,16 +2,26 @@
 
 *Initial Draft Specification - subject to change!*
 
-The required layout for themes to be listed in the directory will be:
-- themefile.yml (where `themefile` is the name of your theme, and is the same for all files)  
-- themefile.png (a logo/banner for your theme)  
-  <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/example/ETX.png">
-- themefile1.png (first screenshot, of the main screen with some common widgets selected)  
-  <img src="https://github.com/EdgeTX/themes/blob/main/example/ETX1.png">  
-- themefile2.png (second screenshot, of model selection screen with at least two models present)  
-  <img src="https://github.com/EdgeTX/themes/blob/main/example/ETX2.png">  
-- themefile3.png (third screenshot, of the channel monitor)  
-  <img src="https://github.com/EdgeTX/themes/blob/main/example/ETX3.png">  
+A single theme consists of 5 files, all sharing the initial part of the filename:
+<ol>
+  <li>themefile.yml (where `themefile` is the name of your theme, and is the same for all files)</li>
+  <li>
+    themefile.png (a logo/banner for your theme)
+    <br><img src="https://raw.githubusercontent.com/EdgeTX/themes/main/example/ETX.png">
+  </li>
+  <li>
+    themefile1.png (first screenshot, of the main screen with some common widgets selected)
+    <br><img src="https://github.com/EdgeTX/themes/blob/main/example/ETX1.png">
+  </li>
+  <li>
+    themefile2.png (second screenshot, of model selection screen with at least two models present)  
+    <br><img src="https://github.com/EdgeTX/themes/blob/main/example/ETX2.png">
+  </li>
+  <li>
+    themefile3.png (third screenshot, of the channel monitor)  
+    <br><img src="https://github.com/EdgeTX/themes/blob/main/example/ETX3.png">
+  </li>
+</ol>
 
 Images should all be in PNG format, and 225 x 128 pixels in size.
 
