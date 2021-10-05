@@ -1,7 +1,7 @@
 # themes
 Themes directory for third party themes for EdgeTX
 
-*Initial Draft Specifiication - subject to change!*
+*Initial Draft Specification - subject to change!*
 
 The required layout for themes to be listed in the directory will be:
 - themefile.yml (where `themefile` is the name of your theme, and is the same for all files)
