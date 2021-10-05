@@ -3,25 +3,15 @@
 *Initial Draft Specification - subject to change!*
 
 A theme for EdgeTX consists of 5 files, all sharing the initial part of the filename:
-<ol>
-  <li>themefile.yml (where <code>themefile</code> is the name of your theme, and is the same for all files)</li>
-  <li>
-    themefile.png (a logo/banner for your theme)
-    <br><img src="https://raw.githubusercontent.com/EdgeTX/themes/main/example/ETX.png">
-  </li>
-  <li>
-    themefile1.png (first screenshot, of the main screen with some common widgets selected)
-    <br><img src="https://github.com/EdgeTX/themes/blob/main/example/ETX1.png">
-  </li>
-  <li>
-    themefile2.png (second screenshot, of model selection screen with at least two models present)  
-    <br><img src="https://github.com/EdgeTX/themes/blob/main/example/ETX2.png">
-  </li>
-  <li>
-    themefile3.png (third screenshot, of the channel monitor)  
-    <br><img src="https://github.com/EdgeTX/themes/blob/main/example/ETX3.png">
-  </li>
-</ol>
+  - themefile.yml (where <code>themefile</code> is the name of your theme, and is the same for all files)
+  - themefile.png (a logo/banner for your theme)
+    ![Example Logo](example/ETX.png)
+  - themefile1.png (first screenshot, of the main screen with some common widgets selected)
+    ![Example Screenshot 1](example/ETX1.png)
+  - themefile2.png (second screenshot, of model selection screen with at least two models present)
+    ![Example Screenshot 2](example/ETX2.png)
+  - themefile3.png (third screenshot, of the channel monitor)
+    ![Example Screenshot 3](example/ETX3.png)
 
 Images should all be in PNG format, and 225 x 128 pixels in size.
 
