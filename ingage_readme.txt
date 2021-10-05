@@ -1,0 +1,1 @@
+To use the background included with this theme rename it to 'background.png' and replace the existing 'background.png' in the THEMES/EdgeTX/ folder.
