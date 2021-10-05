@@ -2,7 +2,7 @@
 
 *Initial Draft Specification - subject to change!*
 
-A single theme consists of 5 files, all sharing the initial part of the filename:
+A theme for EdgeTX consists of 5 files, all sharing the initial part of the filename:
 <ol>
   <li>themefile.yml (where `themefile` is the name of your theme, and is the same for all files)</li>
   <li>
