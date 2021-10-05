@@ -14,4 +14,4 @@ Images should all be in PNG format, and 225 x 128 pixels in size.
 
 Please refer to the `example` folder for an example of the expected layout.
 
-Please refer to TODO documentation for more information on the theme specification.
+Please refer to TODO documentation for more information on the theme file format.
