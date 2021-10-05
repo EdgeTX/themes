@@ -1,0 +1,17 @@
+---
+summary:
+  name: EdgeTX
+  author: EdgeTX Team
+  info: The EdgeTX default colors
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xFFFFFF
+  PRIMARY3:   0x0C5E99
+  SECONDARY1: 0x125E99
+  SECONDARY2: 0xB6E0F2
+  SECONDARY3: 0xE4EEF2
+  FOCUS:      0x14A1E5
+  EDIT:       0x009909
+  ACTIVE:     0xFFDE00
+  WARNING:    0xE00000
+  DISABLED:   0x8C8C8C
