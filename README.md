@@ -40,5 +40,5 @@ Please refer to TODO documentation for more information on the theme file format
     <br><code>git clone -b mytesttheme https://github.com/<your user name in GitHub>/themes.git ~/edgetx/themes</code>
     <br>Then add the files with <code>git add</code>, followed by a commit with <code>git commit -m "commitmessagehere"</code> and then push with <code>git push</code>
   <br>If you are a Windows user and looking for a graphical tool for Git, have a look at e.g. <a href="https://tortoisegit.org/">TortoiseGit</a></li>
-  <li>Make a pull request by clicking the big green button in GitHub in your fork's branch.</li>
+  <li>Make a pull request by clicking the big green "Compare & Pull Request" button in GitHub in your fork's branch.</li>
 </ol>
