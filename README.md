@@ -13,6 +13,10 @@ A theme for EdgeTX consists of 5 files, all sharing the initial part of the file
   - themefile3.png (third screenshot, of the channel monitor)</br>
     ![Example Screenshot 3](example/ETX3.png)
 
+Optional:
+  - themefile_background.png (a background image for your theme)
+  - themefile_readme.txt (any notes or information you wish to share with your theme)
+
 Images should all be in PNG format, and 225 x 128 pixels in size.
 
 Please refer to the `example` folder for an example of the expected layout.
