@@ -52,7 +52,7 @@ If you want to contribute at current early stage in spite of the warning above, 
   <li>Make a branch (by clicking down arrow at "main" and typing an arbitrary name without spaces, e.g. "mytesttheme" and clicking "Create branch")</li>
   <li>Commit your changes to your newly created branch.
     <br>You can work via GitHub Web interface or optionally you can do this also locally. Instructions for local command line would be:
-    <br><code>git clone -b mytesttheme https://github.com/<your user name in GitHub>/themes.git ~/edgetx/themes</code>
+    <br><code>git clone -b mytesttheme https://github.com/your_user_name_in_GitHub/themes.git ~/edgetx/themes</code>
     <br>Then add the files with <code>git add</code>, followed by a commit with <code>git commit -m "commitmessagehere"</code> and then push with <code>git push</code>
   <br>If you are a Windows user and looking for a graphical tool for Git, have a look at e.g. <a href="https://tortoisegit.org/">TortoiseGit</a></li>
   <li>Make a pull request by clicking the big green "Compare & Pull Request" button in GitHub in your fork's branch.</li>
