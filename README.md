@@ -32,7 +32,8 @@ A theme for EdgeTX consists of 5 files, all sharing the initial part of the file
     ![Example Screenshot 3](example/ETX3.png)
 
 Optional:
-  - themefile_bg_480x272.png (a background image for your theme in 480 x 272 pixel resolution)
+  - themefile_bg_480x272.png (a background image for your theme in 480 x 272 pixel resolution, e.g. for TX16S, T16, X10, X12S)
+  - themefile_bg_320x480.png (a background image for your theme in 320 x 480 pixel resolution, e.g. for NV14)
   - themefile_readme.txt (any notes or information you wish to share with your theme)
 
 Images should all be in PNG format, and 225 x 128 pixels in size, except the optional background image.
