@@ -13,6 +13,12 @@
 ### ingage_purps
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_purps1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_purps2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_purps3.png">
 
+### ingage_pastel
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_pastel1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_pastel2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_pastel3.png">
+
+### ingage_carbon
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_carbon1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_carbon2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_carbon3.png">
+
 ### RCVR_High_Contrast
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast3.png"> 
 
