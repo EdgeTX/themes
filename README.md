@@ -36,7 +36,7 @@ Optional:
   - themefile_bg_320x480.png (a background image for your theme in 320 x 480 pixel resolution, e.g. for NV14)
   - themefile_readme.txt (any notes or information you wish to share with your theme)
 
-Images should all be in PNG format, and 225 x 128 pixels in size, except the optional background image.
+Images should all be in PNG format, and 225 x 128 pixels in size, except the optional background image(s).
 
 Please refer to the `example` folder for an example of the expected layout.
 
