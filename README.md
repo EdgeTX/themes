@@ -2,15 +2,15 @@
 
 *Initial Draft Specification - subject to change!*
 
-A theme for EdgeTX consists of 5 files, all sharing the initial part of the filename:
-  - themefile.yml (where <code>themefile</code> is the name of your theme, and is the same for all files)
-  - themefile.png (a logo/banner for your theme)</br>
+A theme for EdgeTX consists of 5 files, all sharing the initial part of the filename (**themefile** in this example):
+  - **themefile**.yml (you theme configuration file with name, summary, and color settings)
+  - **themefile**.png (a logo/banner for your theme)</br>
     ![Example Logo](example/ETX.png)
-  - themefile1.png (first screenshot, of the main screen with some common widgets selected)</br>
+  - **themefile**1.png (first screenshot, of the main screen with some common widgets selected)</br>
     ![Example Screenshot 1](example/ETX1.png)
-  - themefile2.png (second screenshot, of model selection screen with at least two models present)</br>
+  - **themefile**2.png (second screenshot, of model selection screen with at least two models present)</br>
     ![Example Screenshot 2](example/ETX2.png)
-  - themefile3.png (third screenshot, of the channel monitor)</br>
+  - **themefile3**.png (third screenshot, of the channel monitor)</br>
     ![Example Screenshot 3](example/ETX3.png)
 
 Optional:
