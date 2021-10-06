@@ -8,13 +8,13 @@
 ## List of themes available
 
 ### RCVR_Halloween
-<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/RCVR_Halloween1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/RCVR_Halloween2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/RCVR_Halloween3.png">
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_Halloween1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_Halloween2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_Halloween3.png">
 
 ### ingage_purps
-<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/ingage_purps1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/ingage_purps2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/ingage_purps3.png">
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_purps1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_purps2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_purps3.png">
 
 ### RCVR_High_Contrast
-<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/RCVR_High_Contrast1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/RCVR_High_Contrast2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/RCVR_High_Contrast3.png"> 
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast3.png"> 
 
 ## Description of an EdgeTX theme
 
@@ -32,10 +32,10 @@ A theme for EdgeTX consists of 5 files, all sharing the initial part of the file
     ![Example Screenshot 3](example/ETX3.png)
 
 Optional:
-  - themefile_background.png (a background image for your theme)
+  - themefile_bg_480x272.png (a background image for your theme in 480 x 272 pixel resolution)
   - themefile_readme.txt (any notes or information you wish to share with your theme)
 
-Images should all be in PNG format, and 225 x 128 pixels in size.
+Images should all be in PNG format, and 225 x 128 pixels in size, except the optional background image.
 
 Please refer to the `example` folder for an example of the expected layout.
 
