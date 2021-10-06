@@ -20,7 +20,7 @@
 
 *Initial Draft Specification - subject to change!*
 
-A theme for EdgeTX consists of 5 files, all sharing the initial part of the filename (**themefile** in this example):
+A theme for EdgeTX consists minimally of 5 files, all sharing the initial part of the filename (**themefile** in this example):
   - **themefile**.yml (you theme configuration file with name, summary, and color settings)
   - **themefile**.png (a logo/banner for your theme)</br>
     ![Example Logo](example/ETX.png)
