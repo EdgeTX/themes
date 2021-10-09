@@ -10,14 +10,23 @@
 ### RCVR_Halloween
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_Halloween1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_Halloween2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_Halloween3.png">
 
+### ingage_coffee
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_coffee1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_coffee2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_coffee3.png">
+
+### ingage_espresso
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_espresso1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_espresso2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_espresso3.png">
+
 ### ingage_purps
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_purps1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_purps2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_purps3.png">
 
-### ingage_pastel
-<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_pastel1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_pastel2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_pastel3.png">
-
 ### ingage_carbon
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_carbon1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_carbon2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_carbon3.png">
+
+### ingage_poke
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_poke1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_poke2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_poke3.png">
+
+### ingage_pastel
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_pastel1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_pastel2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/ingage_pastel3.png">
 
 ### RCVR_High_Contrast
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast3.png"> 
