@@ -32,7 +32,9 @@
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast1.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast2.png"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RCVR_High_Contrast3.png"> 
 
 ### Stroopwafel
-<img src="https://github.com/Str00pwafel/themes/blob/StroopwafelTheme/themefile1.png"> <img src="https://github.com/Str00pwafel/themes/blob/StroopwafelTheme/themefile2.png"> <img src="https://github.com/Str00pwafel/themes/blob/StroopwafelTheme/themefile3.png"> 
+<img src="https://github.com/Str00pwafel/themes/blob/StroopwafelTheme/themefile1.png"> 
+<img src="https://github.com/Str00pwafel/themes/blob/StroopwafelTheme/themefile2.png"> 
+<img src="https://github.com/Str00pwafel/themes/blob/StroopwafelTheme/themefile3.png"> 
 
 ## Description of an EdgeTX theme
 
