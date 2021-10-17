@@ -43,11 +43,11 @@ A theme for EdgeTX consists minimally of 5 files, all sharing the initial part o
   - **themefile**.png (a logo/banner for your theme)</br>
     ![Example Logo](example/ETX.png)
   - **themefile**1.png (first screenshot, of the main screen with some common widgets selected)</br>
-    ![Example Screenshot 1](example/ETX1.png)
+    <img width="240px" src="example/ETX1.png">
   - **themefile**2.png (second screenshot, of model selection screen with at least two models present)</br>
-    ![Example Screenshot 2](example/ETX2.png)
+    <img width="240px" src="example/ETX2.png">
   - **themefile**3.png (third screenshot, of the channel monitor)</br>
-    ![Example Screenshot 3](example/ETX3.png)
+    <img width="240px" src="example/ETX3.png">
 
 Optional:
   - **themefile**_bg_480x272.png (a background image for your theme in 480 x 272 pixel resolution, e.g. for TX16S, T16, X10, X12S)
