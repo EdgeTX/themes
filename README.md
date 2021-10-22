@@ -66,6 +66,12 @@ Images should all be in PNG format, and 480x272 pixels in size, except the optio
 
 Please refer to the `example` folder for an example of the expected layout.
 
+Please refer to TODO documentation for more information on the theme file format.
+
+## Steps to contribute
+
+Please note that themes are currently still in development phase in EdgeTX and the specification can change. Thus please be prepared that at some point in (near) future you might be asked to update your submission, as we change the specification, e.g. about the image size or YAML style required.
+
 In order to take screenshots using the EdgeTX simulator, first start EdgeTX Companion, pick from menu `Settings` the menu item with similar name `Settings...`
 Navigate to `Simulator Settings` tab and provide a folder where you would like the simulator to save the images (here in example `Z:\Multimedia`):
 
@@ -74,12 +80,6 @@ Navigate to `Simulator Settings` tab and provide a folder where you would like t
 When using EdgeTX Simulator, click on the Screenshot icon to take a screenshot:
 
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/doc/HowToSimuScreenshot.png" width="250px">
-
-Please refer to TODO documentation for more information on the theme file format.
-
-## Steps to contribute
-
-Please note that themes are currently still in development phase in EdgeTX and the specification can change. Thus please be prepared that at some point in (near) future you might be asked to update your submission, as we change the specification, e.g. about the image size or YAML style required.
 
 If you want to contribute at current early stage in spite of the warning above, here are the steps:
 <ol>
