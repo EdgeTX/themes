@@ -1,0 +1,17 @@
+---
+summary:
+  name: EdgeTX RED
+  author: EdgeTX Team
+  info: The EdgeTX Red colours
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xFFFFFF
+  PRIMARY3:   0xB7200C
+  SECONDARY1: 0xEB0047
+  SECONDARY2: 0xFECB98
+  SECONDARY3: 0xFAE6B0
+  FOCUS:      0x94001A
+  EDIT:       0x009909
+  ACTIVE:     0xFFDE00
+  WARNING:    0xE00000
+  DISABLED:   0x8C8C8C
