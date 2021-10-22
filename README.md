@@ -36,10 +36,18 @@
 
 ## Description of an EdgeTX theme
 
+In EdgeTX 2.5, themes only really comprise of the following:
+  - **themefile**.yml (your theme configuration file with name, summary, and color settings)
+  - **themefile**.png (a logo/banner for your theme)</br>
+
+No other files are used by the transmsmitter firmware, and the **themefile**.png is itself not strictly necessary for the theme to function. 
+
+However, moving forward to EdgeTX 2.6, it is envisaged that themes will also be able to provide a background, and that the end user will have more control over what is displayed  when. Thus, the following draft specification as to how a theme will look, which will be expected as of EdgeTX 2.6, and as it is still in draft form, subject to change as it continues to evolve. 
+
 *Initial Draft Specification - subject to change!*
 
 A theme for EdgeTX consists minimally of 5 files, all sharing the initial part of the filename (**themefile** in this example):
-  - **themefile**.yml (you theme configuration file with name, summary, and color settings)
+  - **themefile**.yml (your theme configuration file with name, summary, and color settings)
   - **themefile**.png (a logo/banner for your theme)</br>
     ![Example Logo](example/ETX.png)
   - **themefile**1.png (first screenshot, of the main screen with some common widgets selected)</br>
