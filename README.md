@@ -34,6 +34,9 @@
 ### Stroopwafel
 <img width="240px" src="https://github.com/Str00pwafel/themes/blob/main/THEMES/stroopwafel1.png"> <img width="240px" src="https://github.com/Str00pwafel/themes/blob/main/THEMES/stroopwafel2.png"> <img width="240px" src="https://github.com/Str00pwafel/themes/blob/main/THEMES/stroopwafel3.png">
 
+### SimpleRed
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/SimpleRed1.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/SimpleRed2.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/SimpleRed3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 In EdgeTX 2.5, themes only really comprise of the following:
