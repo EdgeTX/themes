@@ -1,0 +1,17 @@
+---
+summary:
+  name: EdgeTX Extravagant
+  author: EdgeTX Team
+  info: The EdgeTX Extravagant Style
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xFFFFFF
+  PRIMARY3:   0xEF6300
+  SECONDARY1: 0x784724
+  SECONDARY2: 0xFECB98
+  SECONDARY3: 0xFAE6B0
+  FOCUS:      0xA04200
+  EDIT:       0x4D9951
+  ACTIVE:     0xFEED7F
+  WARNING:    0xA00000
+  DISABLED:   0x8C8C8C
