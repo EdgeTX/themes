@@ -1,0 +1,17 @@
+---
+summary:
+  name: RL Red Wine
+  author: Richard Li (EdgeTX Team)
+  info: The Red Wine Style
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xFFFFFF
+  PRIMARY3:   0xFF2E2E
+  SECONDARY1: 0x580F0F
+  SECONDARY2: 0xFFBBBB
+  SECONDARY3: 0xFFDDDD
+  FOCUS:      0xB12020
+  EDIT:       0xC25100
+  ACTIVE:     0xFF8080
+  WARNING:    0xA00000
+  DISABLED:   0x8C7E7E
