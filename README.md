@@ -40,6 +40,9 @@
 ### Extravagant
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/Extravagant1.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/Extravagant2.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/Extravagant3.png" width="240px">
 
+### RedWine
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RedWine1.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RedWine2.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/RedWine3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 In EdgeTX 2.5, themes only really comprise of the following:
