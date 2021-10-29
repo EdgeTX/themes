@@ -1,8 +1,8 @@
 ---
 summary:
-  name: EdgeTX Extravagant
-  author: EdgeTX Team
-  info: The EdgeTX Extravagant Style
+  name: RL Extravagant
+  author: Richard Li (EdgeTX Team)
+  info: The Extravagant Style
 colors:
   PRIMARY1:   0x000000
   PRIMARY2:   0xFFFFFF
