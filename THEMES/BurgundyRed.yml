@@ -1,8 +1,8 @@
 ---
 summary:
-  name: RL Red Wine
+  name: RL Burgundy Red
   author: Richard Li (EdgeTX Team)
-  info: The Red Wine Style
+  info: The Burgundy Red Style
 colors:
   PRIMARY1:   0x000000
   PRIMARY2:   0xFFFFFF
