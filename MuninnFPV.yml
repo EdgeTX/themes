@@ -1,0 +1,17 @@
+---
+summary:
+  name: D.V.A PINK
+  author: MuninnFPV
+  info: D.V.A PINK Theme
+colors:
+  PRIMARY1:   0xFFFFFF
+  PRIMARY2:   0x3B3B3B
+  PRIMARY3:   0x660C63
+  SECONDARY1: 0xEE4BB5
+  SECONDARY2: 0xF2B6F1
+  SECONDARY3: 0x3B3B3B
+  FOCUS:      0xFEABE6
+  EDIT:       0x990021
+  ACTIVE:     0x6406F6
+  WARNING:    0xE00000
+  DISABLED:   0x8C8C8C
