@@ -43,6 +43,9 @@
 ### BurgundyRed
 <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/BurgundyRed1.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/BurgundyRed2.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/BurgundyRed3.png" width="240px">
 
+### D.Va Pink
+<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/DVA_PINK1.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/DVA_PINK2.png" width="240px"> <img src="https://raw.githubusercontent.com/EdgeTX/themes/main/THEMES/DVA_PINK3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 In EdgeTX 2.5, themes only really comprise of the following:
