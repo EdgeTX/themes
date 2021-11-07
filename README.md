@@ -10,6 +10,9 @@
 ### RCVR_Halloween
 <img src="THEMES/RCVR_Halloween1.png" width="240px"> <img src="THEMES/RCVR_Halloween2.png" width="240px"> <img src="THEMES/RCVR_Halloween3.png" width="240px">
 
+### RCVR_USA
+<img src="THEMES/RCVR_USA1.png" width="240px"> <img src="THEMES/RCVR_USA2.png" width="240px"> <img src="THEMES/RCVR_USA3.png" width="240px">
+
 ### InGage_coffee
 <img src="THEMES/ingage_coffee1.png" width="240px"> <img src="THEMES/ingage_coffee2.png" width="240px"> <img src="THEMES/ingage_coffee3.png" width="240px">
 
