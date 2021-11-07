@@ -10,6 +10,9 @@
 ### RCVR_Halloween
 <img src="THEMES/RCVR_Halloween1.png" width="240px"> <img src="THEMES/RCVR_Halloween2.png" width="240px"> <img src="THEMES/RCVR_Halloween3.png" width="240px">
 
+### RCVR_High_Contrast
+<img src="THEMES/RCVR_High_Contrast1.png" width="240px"> <img src="THEMES/RCVR_High_Contrast2.png" width="240px"> <img src="THEMES/RCVR_High_Contrast3.png" width="240px">
+
 ### RCVR_USA
 <img src="THEMES/RCVR_USA1.png" width="240px"> <img src="THEMES/RCVR_USA2.png" width="240px"> <img src="THEMES/RCVR_USA3.png" width="240px">
 
@@ -30,9 +33,6 @@
 
 ### InGage_pastel
 <img src="THEMES/ingage_pastel1.png" width="240px"> <img src="THEMES/ingage_pastel2.png" width="240px"> <img src="THEMES/ingage_pastel3.png" width="240px">
-
-### RCVR_High_Contrast
-<img src="THEMES/RCVR_High_Contrast1.png" width="240px"> <img src="THEMES/RCVR_High_Contrast2.png" width="240px"> <img src="THEMES/RCVR_High_Contrast3.png" width="240px">
 
 ### Stroopwafel
 <img width="240px" src="THEMES/stroopwafel1.png"> <img width="240px" src="THEMES/stroopwafel2.png"> <img width="240px" src="THEMES/stroopwafel3.png">
