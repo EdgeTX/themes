@@ -40,11 +40,11 @@
 ### SimpleRed
 <img src="THEMES/SimpleRed1.png" width="240px"> <img src="THEMES/SimpleRed2.png" width="240px"> <img src="THEMES/SimpleRed3.png" width="240px">
 
-### Extravagant
-<img src="THEMES/Extravagant1.png" width="240px"> <img src="THEMES/Extravagant2.png" width="240px"> <img src="THEMES/Extravagant3.png" width="240px">
+### RL_Extravagant
+<img src="THEMES/RL_Extravagant1.png" width="240px"> <img src="THEMES/RL_Extravagant2.png" width="240px"> <img src="THEMES/RL_Extravagant3.png" width="240px">
 
-### BurgundyRed
-<img src="THEMES/BurgundyRed1.png" width="240px"> <img src="THEMES/BurgundyRed2.png" width="240px"> <img src="THEMES/BurgundyRed3.png" width="240px">
+### RL_BurgundyRed
+<img src="THEMES/RL_BurgundyRed1.png" width="240px"> <img src="THEMES/RL_BurgundyRed2.png" width="240px"> <img src="THEMES/RL_BurgundyRed3.png" width="240px">
 
 ### D.Va Pink
 <img src="THEMES/DVA_PINK1.png" width="240px"> <img src="THEMES/DVA_PINK2.png" width="240px"> <img src="THEMES/DVA_PINK3.png" width="240px">
