@@ -1,5 +1,7 @@
 # Themes directory for third party themes for EdgeTX
 
+To download all themes, hit the green `Code` button above and choose `Download ZIP`. Alternatively you can git clone the whole repo with a git tool of your choice.
+
 - Contents (ToC):
   * [List of themes available](#list-of-themes-available)
   * [Description of an EdgeTX theme](#description-of-an-edgetx-theme)
