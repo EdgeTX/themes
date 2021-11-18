@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-SCRIPT_DIR="$(realpath $(dirname "$BASH_SOURCE"))"
+SCRIPT_DIR="$(realpath "$(dirname "${BASH_SOURCE[0]:-$0}")")"
 THEMES_DIR="$(realpath "${SCRIPT_DIR}"/../THEMES)"
 
 echo "Themes dir: '${THEMES_DIR}' ..."
