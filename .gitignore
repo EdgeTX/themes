@@ -1,3 +1,18 @@
+# User creatable local folders #
+################################
 /*.user
 /*.user.*
+
+# Package build directory #
+###########################
 build/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
