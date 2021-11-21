@@ -17,7 +17,7 @@ RGB color scheme examples:
 
 # Theme definition
 
-Themes colors definition is stored in YAML format text files placed in /THEMES/<themename> folder in radio's SD card. YAML (Yet Another Markup Language) is simple markup language to define data structure. It can be edited using any text editor. The theme definition file has to be called `theme.yml`
+Themes colors definition is stored in YAML format text files placed in `/THEMES/<themename>` folder in radio's SD card. YAML (Yet Another Markup Language) is simple markup language to define data structure. It can be edited using any text editor. The theme definition file has to be called `theme.yml`
 
 Additionally you can include graphic file (in PNG format) to display in EdgeTX User Interface tab theme preview. To display, preview file name must be `logo.png`.
 
