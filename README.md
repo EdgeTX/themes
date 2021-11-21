@@ -1,5 +1,7 @@
 # Themes directory for third party themes for EdgeTX
 
+If you need themes compatiable with EdgeTX v2.5, please use the branch selection menu above to select '2.5'.
+
 To download all themes, hit the green `Code` button above and choose `Download ZIP`. Alternatively you can git clone the whole repo with a git tool of your choice.
 
 - Contents (ToC):
@@ -10,80 +12,70 @@ To download all themes, hit the green `Code` button above and choose `Download Z
 ## List of themes available
 
 ### RCVR_Halloween
-<img src="THEMES/RCVR_Halloween1.png" width="240px"> <img src="THEMES/RCVR_Halloween2.png" width="240px"> <img src="THEMES/RCVR_Halloween3.png" width="240px">
+<img src="THEMES/RCVR_Halloween/screenshot1.png" width="240px"> <img src="THEMES/RCVR_Halloween/screenshot2.png" width="240px"> <img src="THEMES/RCVR_Halloween/screenshot3.png" width="240px">
 
 ### RCVR_High_Contrast
-<img src="THEMES/RCVR_High_Contrast1.png" width="240px"> <img src="THEMES/RCVR_High_Contrast2.png" width="240px"> <img src="THEMES/RCVR_High_Contrast3.png" width="240px">
+<img src="THEMES/RCVR_High_Contrast/screenshot1.png" width="240px"> <img src="THEMES/RCVR_High_Contrast/screenshot2.png" width="240px"> <img src="THEMES/RCVR_High_Contrast/screenshot3.png" width="240px">
 
 ### RCVR_USA
-<img src="THEMES/RCVR_USA1.png" width="240px"> <img src="THEMES/RCVR_USA2.png" width="240px"> <img src="THEMES/RCVR_USA3.png" width="240px">
+<img src="THEMES/RCVR_USA/screenshot1.png" width="240px"> <img src="THEMES/RCVR_USA/screenshot2.png" width="240px"> <img src="THEMES/RCVR_USA/screenshot3.png" width="240px">
 
 ### InGage_coffee
-<img src="THEMES/ingage_coffee1.png" width="240px"> <img src="THEMES/ingage_coffee2.png" width="240px"> <img src="THEMES/ingage_coffee3.png" width="240px">
+<img src="THEMES/ingage_coffee/screenshot1.png" width="240px"> <img src="THEMES/ingage_coffee/screenshot2.png" width="240px"> <img src="THEMES/ingage_coffee/screenshot3.png" width="240px">
 
 ### InGage_espresso
-<img src="THEMES/ingage_espresso1.png" width="240px"> <img src="THEMES/ingage_espresso2.png" width="240px"> <img src="THEMES/ingage_espresso3.png" width="240px">
+<img src="THEMES/ingage_espresso/screenshot1.png" width="240px"> <img src="THEMES/ingage_espresso/screenshot2.png" width="240px"> <img src="THEMES/ingage_espresso/screenshot3.png" width="240px">
 
 ### InGage_purps
-<img src="THEMES/ingage_purps1.png" width="240px"> <img src="THEMES/ingage_purps2.png" width="240px"> <img src="THEMES/ingage_purps3.png" width="240px">
+<img src="THEMES/ingage_purps/screenshot1.png" width="240px"> <img src="THEMES/ingage_purps/screenshot2.png" width="240px"> <img src="THEMES/ingage_purps/screenshot3.png" width="240px">
 
 ### InGage_carbon
-<img src="THEMES/ingage_carbon1.png" width="240px"> <img src="THEMES/ingage_carbon2.png" width="240px"> <img src="THEMES/ingage_carbon3.png" width="240px">
+<img src="THEMES/ingage_carbon/screenshot1.png" width="240px"> <img src="THEMES/ingage_carbon/screenshot2.png" width="240px"> <img src="THEMES/ingage_carbon/screenshot3.png" width="240px">
 
 ### InGage_poke
-<img src="THEMES/ingage_poke1.png" width="240px"> <img src="THEMES/ingage_poke2.png" width="240px"> <img src="THEMES/ingage_poke3.png" width="240px">
+<img src="THEMES/ingage_poke/screenshot1.png" width="240px"> <img src="THEMES/ingage_poke/screenshot2.png" width="240px"> <img src="THEMES/ingage_poke/screenshot3.png" width="240px">
 
 ### InGage_pastel
-<img src="THEMES/ingage_pastel1.png" width="240px"> <img src="THEMES/ingage_pastel2.png" width="240px"> <img src="THEMES/ingage_pastel3.png" width="240px">
+<img src="THEMES/ingage_pastel/screenshot1.png" width="240px"> <img src="THEMES/ingage_pastel/screenshot2.png" width="240px"> <img src="THEMES/ingage_pastel/screenshot3.png" width="240px">
 
 ### Stroopwafel
-<img width="240px" src="THEMES/stroopwafel1.png"> <img width="240px" src="THEMES/stroopwafel2.png"> <img width="240px" src="THEMES/stroopwafel3.png">
+<img width="240px" src="THEMES/stroopwafel/screenshot1.png"> <img width="240px" src="THEMES/stroopwafel/screenshot2.png"> <img width="240px" src="THEMES/stroopwafel/screenshot3.png">
 
 ### SimpleRed
-<img src="THEMES/SimpleRed1.png" width="240px"> <img src="THEMES/SimpleRed2.png" width="240px"> <img src="THEMES/SimpleRed3.png" width="240px">
+<img src="THEMES/SimpleRed/screenshot1.png" width="240px"> <img src="THEMES/SimpleRed/screenshot2.png" width="240px"> <img src="THEMES/SimpleRed/screenshot3.png" width="240px">
 
 ### RL_Extravagant
-<img src="THEMES/RL_Extravagant1.png" width="240px"> <img src="THEMES/RL_Extravagant2.png" width="240px"> <img src="THEMES/RL_Extravagant3.png" width="240px">
+<img src="THEMES/RL_Extravagant/screenshot1.png" width="240px"> <img src="THEMES/RL_Extravagant/screenshot2.png" width="240px"> <img src="THEMES/RL_Extravagant/screenshot3.png" width="240px">
 
 ### RL_BurgundyRed
-<img src="THEMES/RL_BurgundyRed1.png" width="240px"> <img src="THEMES/RL_BurgundyRed2.png" width="240px"> <img src="THEMES/RL_BurgundyRed3.png" width="240px">
+<img src="THEMES/RL_BurgundyRed/screenshot1.png" width="240px"> <img src="THEMES/RL_BurgundyRed/screenshot2.png" width="240px"> <img src="THEMES/RL_BurgundyRed/screenshot3.png" width="240px">
 
 ### D.Va Pink
-<img src="THEMES/DVA_PINK1.png" width="240px"> <img src="THEMES/DVA_PINK2.png" width="240px"> <img src="THEMES/DVA_PINK3.png" width="240px">
+<img src="THEMES/DVA_PINK/screenshot1.png" width="240px"> <img src="THEMES/DVA_PINK/screenshot2.png" width="240px"> <img src="THEMES/DVA_PINK/screenshot3.png" width="240px">
 
 ## Description of an EdgeTX theme
 
-In EdgeTX 2.5, themes only really comprise of the following:
-  - **themefile**.yml (your theme configuration file with name, summary, and color settings)
-  - **themefile**.png (a logo/banner for your theme)</br>
-
-No other files are used by the transmsmitter firmware, and the **themefile**.png is itself not strictly necessary for the theme to function. 
-
-However, moving forward to EdgeTX 2.6, it is envisaged that themes will also be able to provide a background, and that the end user will have more control over what is displayed  when. Thus, the following draft specification as to how a theme will look, which will be expected as of EdgeTX 2.6, and as it is still in draft form, subject to change as it continues to evolve. 
-
-*Initial Draft Specification - subject to change!*
-
-A theme for EdgeTX consists minimally of 5 files, all sharing the initial part of the filename (**themefile** in this example):
-  - **themefile**.yml (your theme configuration file with name, summary, and color settings)
-  - **themefile**.png (a logo/banner for your theme)</br>
-    ![Example Logo](example/ETX.png)
-  - **themefile**1.png (first screenshot, of the main screen with some common widgets selected)</br>
-    <img width="240px" src="example/ETX1.png">
-  - **themefile**2.png (second screenshot, of model selection screen with at least two models present)</br>
-    <img width="240px" src="example/ETX2.png">
-  - **themefile**3.png (third screenshot, of the channel monitor)</br>
-    <img width="240px" src="example/ETX3.png">
+A theme for EdgeTX consists minimally of 5 files, all sharing the initial part of the filename (**themename** in this example):
+  - **themename/theme**.yml (your theme configuration file with name, summary, and color settings)
+  - **themename/logo**.png (a logo/banner for your theme)</br>
+    ![Example Logo](example/logo.png)
+  - **themename/screenshot1.png** (first screenshot, of the main screen with some common widgets selected)</br>
+    <img width="240px" src="example/screenshot1.png">
+  - **themename/screenshot2.png** (second screenshot, of model selection screen with at least two models present)</br>
+    <img width="240px" src="example/screenshot2.png">
+  - **themename/screenshot3.png** (third screenshot, of the channel monitor)</br>
+    <img width="240px" src="example/screenshot3.png">
 
 Optional:
-  - **themefile**_bg_480x272.png (a background image for your theme in 480 x 272 pixel resolution, e.g. for TX16S, T16, X10, X12S)
-  - **themefile**_bg_320x480.png (a background image for your theme in 320 x 480 pixel resolution, e.g. for NV14)
-  - **themefile**_readme.txt (any notes or information you wish to share with your theme)
+  - **themename/background_480x272.png** (a background image for your theme in 480 x 272 pixel resolution, e.g. for TX16S, T16, X10, X12S)
+  - **themename/background_320x480.png** (a background image for your theme in 320 x 480 pixel resolution, e.g. for NV14)
+  - **themename/readme.txt** (any notes or information you wish to share with your theme)
 
 Images should all be in PNG format, and 480x272 pixels in size, except the optional 320x480 background image.
 
 Please refer to the `example` folder for an example of the expected layout.
 
-Please refer to TODO documentation for more information on the theme file format.
+Please refer to [theme documentation](structure.md) for more information on the theme file format.
 
 ## Steps to contribute
 
@@ -92,11 +84,11 @@ Please note that themes are currently still in development phase in EdgeTX and t
 In order to take screenshots using the EdgeTX simulator, first start EdgeTX Companion, pick from menu `Settings` the menu item with similar name `Settings...`
 Navigate to `Simulator Settings` tab and provide a folder where you would like the simulator to save the images (here in example `Z:\Multimedia`):
 
-<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/doc/SimuScreensShotFolder.png">
+<img src="doc/SimuScreensShotFolder.png">
 
 When using EdgeTX Simulator, click on the Screenshot icon to take a screenshot:
 
-<img src="https://raw.githubusercontent.com/EdgeTX/themes/main/doc/HowToSimuScreenshot.png" width="250px">
+<img src="doc/HowToSimuScreenshot.png" width="250px">
 
 If you want to contribute at current early stage in spite of the warning above, here are the steps:
 <ol>

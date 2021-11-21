@@ -1,0 +1,17 @@
+---
+summary:
+  name: Stroopwafel
+  author: Rinaldo AKA Stroopwafel
+  info: Yes.
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0x6B472D
+  PRIMARY3:   0x917B46
+  SECONDARY1: 0xA88E51
+  SECONDARY2: 0x594521
+  SECONDARY3: 0x703E1C
+  FOCUS:      0xFF8C00
+  EDIT:       0x8F4F00
+  ACTIVE:     0xCCBB00
+  WARNING:    0x910000
+  DISABLED:   0x808080
