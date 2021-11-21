@@ -1,6 +1,6 @@
 # Themes directory for third party themes for EdgeTX
 
-For EdgeTX v2.5 compatible themes, please [goto the 2.5 branch](https://github.com/EdgeTX/themes/tree/2.5).
+For EdgeTX v2.5 compatible themes, please [goto the 2.5 branch](../../tree/2.5).
 
 To download all themes, hit the green `Code` button above and choose `Download ZIP`. Alternatively you can git clone the whole repo with a git tool of your choice.
 
