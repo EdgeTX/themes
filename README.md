@@ -55,7 +55,7 @@ To download all themes, hit the green `Code` button above and choose `Download Z
 
 ## Description of an EdgeTX theme
 
-A theme for EdgeTX consists minimally of 5 files, all sharing the initial part of the filename (**themename** in this example):
+A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder:
   - **themename/theme**.yml (your theme configuration file with name, summary, and color settings)
   - **themename/logo**.png (a logo/banner for your theme)</br>
     ![Example Logo](example/logo.png)
