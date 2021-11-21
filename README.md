@@ -39,7 +39,7 @@ To download all themes, hit the green `Code` button above and choose `Download Z
 <img src="THEMES/ingage_pastel/screenshot1.png" width="240px"> <img src="THEMES/ingage_pastel/screenshot2.png" width="240px"> <img src="THEMES/ingage_pastel/screenshot3.png" width="240px">
 
 ### Stroopwafel
-<img src="THEMES/stroopwafel/screenshot1.png" width="240px"> <img src="THEMES/stroopwafel/screenshot2.png" width="240px"> <img src="THEMES/stroopwafel/screenshot3.png" width="240px">
+<img src="THEMES/Stroopwafel/screenshot1.png" width="240px"> <img src="THEMES/Stroopwafel/screenshot2.png" width="240px"> <img src="THEMES/Stroopwafel/screenshot3.png" width="240px">
 
 ### SimpleRed
 <img src="THEMES/SimpleRed/screenshot1.png" width="240px"> <img src="THEMES/SimpleRed/screenshot2.png" width="240px"> <img src="THEMES/SimpleRed/screenshot3.png" width="240px">
