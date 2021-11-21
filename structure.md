@@ -1,4 +1,4 @@
-# EdgeTX v2.5 Theme Documenation
+# EdgeTX v2.6 Theme Documenation
 
 There are 11 EdgeTX OS color variables that are used to define EdgeTX UI look & feel. PRIMARY1, PRIMARY2, PRIMARY3, SECONDARY1, SECONDARY2, SECONDARY3, FOCUS, ACTIVE, WARNING & DISABLED. Color values format uses 24bit value (RGB color scheme) coded in hex format RRGGBB where RR stands for Red component value, GG for Green and BB for Blue. Each component can have 256 values (00-FF range in hex format)
 
@@ -17,14 +17,9 @@ RGB color scheme examples:
 
 # Theme definition
 
-Themes colors definition is stored in YAML format text files placed in /THEMES folder in radio's SD card. YAML (Yet Another Markup Language) is simple markup language to define data structure. It can be edited using any text editor. File name has to have .yml extension. 
+Themes colors definition is stored in YAML format text files placed in /THEMES/<themename> folder in radio's SD card. YAML (Yet Another Markup Language) is simple markup language to define data structure. It can be edited using any text editor. The theme definition file has to be called `theme.yml`
 
-**Example:** custom_theme.yml
-
-Additionally you can include graphic file (in PNG format) to display in EdgeTX User Interface tab theme preview. To display, preview file name must be the same as YAML file.
-
-**Example:** If theme color definition is name `new_theme.yml` graphic preview file must be named `new_theme.png`
-
+Additionally you can include graphic file (in PNG format) to display in EdgeTX User Interface tab theme preview. To display, preview file name must be `logo.png`.
 
 # Theme YAML file structure
 
