@@ -1,4 +1,6 @@
-# Themes directory for third party themes for EdgeTX
+# Themes directory for third party themes for EdgeTX 2.5
+
+**This is the branch for 2.5 format themes.**
 
 To download all themes, hit the green `Code` button above and choose `Download ZIP`. Alternatively you can git clone the whole repo with a git tool of your choice.
 
