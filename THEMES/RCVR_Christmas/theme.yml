@@ -1,0 +1,18 @@
+---
+summary:
+  name: RCVR_Christmas
+  author: RCVR
+  info: youtube.com/rcvideoreviews
+
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xF8FCF8
+  PRIMARY3:   0x080800
+  SECONDARY1: 0x00C400
+  SECONDARY2: 0xF80000
+  SECONDARY3: 0xF8FCF8
+  FOCUS:      0xF80000
+  EDIT:       0x080000
+  ACTIVE:     0xD8D8D8
+  WARNING:    0xC82828
+  DISABLED:   0x080C08
