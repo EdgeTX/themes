@@ -11,6 +11,9 @@ To download all themes, hit the green `Code` button above and choose `Download Z
 
 ## List of themes available
 
+### RCVR_Christmas
+<img src="THEMES/RCVR_Christmas/screenshot1.png" width="240px"> <img src="THEMES/RCVR_Christmas/screenshot2.png" width="240px"> <img src="THEMES/RCVR_Christmas/screenshot3.png" width="240px">
+
 ### RCVR_Halloween
 <img src="THEMES/RCVR_Halloween/screenshot1.png" width="240px"> <img src="THEMES/RCVR_Halloween/screenshot2.png" width="240px"> <img src="THEMES/RCVR_Halloween/screenshot3.png" width="240px">
 
