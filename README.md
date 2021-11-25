@@ -56,6 +56,9 @@ To download all themes, hit the green `Code` button above and choose `Download Z
 ### D.Va Pink
 <img src="THEMES/DVA_PINK/screenshot1.png" width="240px"> <img src="THEMES/DVA_PINK/screenshot2.png" width="240px"> <img src="THEMES/DVA_PINK/screenshot3.png" width="240px">
 
+### Nia_vibrant_blue
+<img src="THEMES/Nia_vibrant_blue/screenshot1.png" width="240px"> <img src="THEMES/Nia_vibrant_blue/screenshot2.png" width="240px"> <img src="THEMES/Nia_vibrant_blue/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
