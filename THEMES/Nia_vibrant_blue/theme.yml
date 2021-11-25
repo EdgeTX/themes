@@ -1,0 +1,18 @@
+---
+summary:
+  name: Vibrant Blue
+  author: Nialija
+  info: Vibrant Blue
+
+colors:
+  PRIMARY1:   0xF0F4F0
+  PRIMARY2:   0x2050D0
+  PRIMARY3:   0xE0E4E0
+  SECONDARY1: 0x000000
+  SECONDARY2: 0x587470
+  SECONDARY3: 0x2050D0
+  FOCUS:      0x000030
+  EDIT:       0xF89800
+  ACTIVE:     0x009808
+  WARNING:    0xE00000
+  DISABLED:   0x888C88
