@@ -1,0 +1,18 @@
+---
+summary:
+  name: Handpainted Sky
+  author: asix
+  info: Handpainted Sky Theme
+
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xF8FCF8
+  PRIMARY3:   0xB0B0E0
+  SECONDARY1: 0x5858A8
+  SECONDARY2: 0xA070B8
+  SECONDARY3: 0xB880B0
+  FOCUS:      0xE090C8
+  EDIT:       0x282480
+  ACTIVE:     0xF8BC68
+  WARNING:    0xA83428
+  DISABLED:   0xC094D8
