@@ -77,7 +77,7 @@ A theme for EdgeTX consists minimally of 5 files, all located in a dedicated sub
     <img width="240px" src="example/screenshot1.png">
   - **themename/screenshot2.png** (second screenshot, of model selection screen with at least two models present)</br>
     <img width="240px" src="example/screenshot2.png">
-  - **themename/screenshot3.png** (third screenshot, of the channel monitor)</br>
+  - **themename/screenshot3.png** (third screenshot, of the channel monitor, or alternately, Radio/Hardware tab where warning text color shown)</br>
     <img width="240px" src="example/screenshot3.png">
 
 Optional:
