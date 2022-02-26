@@ -1,0 +1,9 @@
+Hi, here is my Rammstein inspired theme.
+
+For the custom power on sound, move the included hello.wav
+and replace original on SD/SOUNDS/your_language_pack/SYSTEM
+
+It can also be downloaded from
+https://drive.google.com/file/d/1PO_3Qcc9XaFgHK0xRPFE1qgEeb46R_9s/view?usp=sharing
+
+Enjoy!
