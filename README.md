@@ -73,6 +73,9 @@ Please give the [online themer tool](https://edriskus.github.io/edgetx-theme-cre
 ### Nirvana Space
 <img src="THEMES/Nirvana_Space/screenshot1.png" width="240px"> <img src="THEMES/Nirvana_Space/screenshot2.png" width="240px"> <img src="THEMES/Nirvana_Space/screenshot3.png" width="240px">
 
+###  Rammstein inspired theme 
+<img src="THEMES/Ram/screenshot1.png" width="240px"> <img src="THEMES/Ram/screenshot2.png" width="240px"> <img src="THEMES/Ram/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
