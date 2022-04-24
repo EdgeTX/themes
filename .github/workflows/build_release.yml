@@ -2,9 +2,9 @@ name: Build Release ZIP
 
 on:
   push:
-    # branches: [ master ]
+    branches: [ master ]
   pull_request:
-    # branches: [ master ]
+    branches: [ master ]
 
 jobs:
   package:
@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
 #      - name: Validate themes
-#        run: mv dist_electron/*.${{ matrix.binary_ending }} edgetx-flasher-${{ matrix.os_name }}-${{ steps.vars.outputs.sha_short }}.${{ matrix.binary_ending }}
+#        run: some validation
 
       - name: Zip the release
         run: mkdir release && zip -r release/edgetx-themes.zip THEMES
@@ -43,11 +43,11 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
 
-      # - name: Upload binaries to release
-      #   uses: marvinpinto/action-automatic-releases@latest
-      #   with:
-      #     title: "Latest Themes Package"
-      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-      #     files: themes-latest/themes-latest
-      #     automatic_release_tag: 'latest'
-      #     prerelease: false
+      - name: Upload binaries to release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          title: "Latest Themes Package"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          files: themes-latest/release/edgetx-themes.zip
+          automatic_release_tag: 'latest'
+          prerelease: false
