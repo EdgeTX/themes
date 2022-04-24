@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: themes-latest
-          path: release/edgetx-themes.zip
+          path: release
           retention-days: 15
           if-no-files-found: error
 
@@ -38,7 +38,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: themes-latest
-          path: themes-latest
+          path: release
 
       - name: Display structure of downloaded files
         run: ls -R
