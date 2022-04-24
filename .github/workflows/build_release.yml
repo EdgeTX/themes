@@ -24,7 +24,7 @@ jobs:
       - name: Zip the release
         run: mkdir release && zip -r release/edgetx-themes.zip THEMES
 
-      - name: Upload validated package
+      - name: Upload zip package
         uses: actions/upload-artifact@v3
         with:
           name: themes-latest
@@ -44,8 +44,8 @@ jobs:
           name: themes-latest
           path: release
 
-      - name: Display structure of downloaded files
-        run: ls -R
+      # - name: Display structure of downloaded files
+      #   run: ls -R
 
       - name: Upload binaries to release
         uses: marvinpinto/action-automatic-releases@latest
