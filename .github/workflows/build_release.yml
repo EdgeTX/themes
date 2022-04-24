@@ -40,8 +40,8 @@ jobs:
           name: themes-latest
           path: release
 
-      - name: Display structure of downloaded files
-        run: ls -R
+      # - name: Display structure of downloaded files
+      #   run: ls -R
 
       - name: Upload binaries to release
         uses: marvinpinto/action-automatic-releases@latest
