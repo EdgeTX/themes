@@ -44,14 +44,14 @@ jobs:
           name: themes-latest
           path: release
 
-      # - name: Display structure of downloaded files
-      #   run: ls -R
+      - name: Display structure of downloaded files
+        run: ls -R
 
       - name: Upload binaries to release
         uses: marvinpinto/action-automatic-releases@latest
         with:
           title: "Latest Themes Package"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          files: themes-latest/release/edgetx-themes.zip
+          files: release/edgetx-themes.zip
           automatic_release_tag: 'latest'
           prerelease: false
