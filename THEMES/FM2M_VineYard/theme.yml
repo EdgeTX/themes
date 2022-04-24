@@ -1,0 +1,18 @@
+---
+summary:
+  name: FM2M Vineyard
+  author: JimB40
+  info: For wine lovers. Remember. Don't drink and fly.
+
+colors:
+  PRIMARY1:   0x00DC00
+  PRIMARY2:   0xF8FC90
+  PRIMARY3:   0xA00098
+  SECONDARY1: 0x780078
+  SECONDARY2: 0x006000
+  SECONDARY3: 0x400040
+  FOCUS:      0x008000
+  EDIT:       0x6060F0
+  ACTIVE:     0x004000
+  WARNING:    0xF80000
+  DISABLED:   0x808080
