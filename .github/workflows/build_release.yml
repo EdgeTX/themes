@@ -18,7 +18,7 @@ jobs:
 #        run: mv dist_electron/*.${{ matrix.binary_ending }} edgetx-flasher-${{ matrix.os_name }}-${{ steps.vars.outputs.sha_short }}.${{ matrix.binary_ending }}
 
       - name: Zip the release
-        run: mkdir release && zip -r edgetx-themes.zip THEMES
+        run: mkdir release && zip -r release/edgetx-themes.zip THEMES
 
       - name: Upload validated package
         uses: actions/upload-artifact@v3
