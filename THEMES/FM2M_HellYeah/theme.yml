@@ -1,0 +1,18 @@
+---
+summary:
+  name: FM2M Hell Yeah!
+  author: JimB40
+  info: Little devil inside my bird.
+
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xF82020
+  PRIMARY3:   0x480000
+  SECONDARY1: 0x080000
+  SECONDARY2: 0xA00000
+  SECONDARY3: 0x700000
+  FOCUS:      0x080000
+  EDIT:       0x400000
+  ACTIVE:     0xF88080
+  WARNING:    0xF8FCF8
+  DISABLED:   0x000000

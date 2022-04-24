@@ -1,0 +1,18 @@
+---
+summary:
+  name: FM2M Original
+  author: JimB40
+  info: Fly Me 2 the Moon original them
+
+colors:
+  PRIMARY1:   0xF8FCF8
+  PRIMARY2:   0x081828
+  PRIMARY3:   0x385C68
+  SECONDARY1: 0x507C90
+  SECONDARY2: 0x507C90
+  SECONDARY3: 0x081828
+  FOCUS:      0xA0C4D0
+  EDIT:       0xE8F8A8
+  ACTIVE:     0x604060
+  WARNING:    0xE00000
+  DISABLED:   0x687888
