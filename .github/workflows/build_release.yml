@@ -17,11 +17,14 @@ jobs:
 #      - name: Validate themes
 #        run: mv dist_electron/*.${{ matrix.binary_ending }} edgetx-flasher-${{ matrix.os_name }}-${{ steps.vars.outputs.sha_short }}.${{ matrix.binary_ending }}
 
-      - name: Upload ${{ matrix.binary_ending }}
+      - name: Zip the release
+        run: mkdir release && zip -r edgetx-themes.zip THEMES
+
+      - name: Upload validated package
         uses: actions/upload-artifact@v3
         with:
           name: themes-latest
-          path: THEMES
+          path: release/edgetx-themes.zip
           retention-days: 15
           if-no-files-found: error
 
