@@ -1,6 +1,5 @@
 name: Build Release ZIP
-description: 'Upload a build artifact that can be used by subsequent workflow steps'
-author: 'GitHub'
+
 on:
   push:
     # branches: [ master ]
