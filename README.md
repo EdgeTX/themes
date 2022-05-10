@@ -91,6 +91,9 @@ Please give the [online themer tool](https://edriskus.github.io/edgetx-theme-cre
 ### FM2M Vineyard
 <img src="THEMES/FM2M_VineYard/screenshot1.png" width="240px"> <img src="THEMES/FM2M_VineYard/screenshot2.png" width="240px"> <img src="THEMES/FM2M_VineYard/screenshot3.png" width="240px">
 
+### RK-Cappuccino
+<img src="THEMES/RK_Cappuccino/screenshot1.png" width="240px"> <img src="THEMES/RK_Cappuccino/screenshot2.png" width="240px"> <img src="THEMES/RK_Cappuccino/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
