@@ -93,6 +93,9 @@ Please give the [online themer tool](https://edriskus.github.io/edgetx-theme-cre
 ### RK-Cappuccino
 <img src="THEMES/RK_Cappuccino/screenshot1.png" width="240px"> <img src="THEMES/RK_Cappuccino/screenshot2.png" width="240px"> <img src="THEMES/RK_Cappuccino/screenshot3.png" width="240px">
 
+### burn7_AnimePink
+<img src="THEMES/burn7_AnimePink/screenshot1.png" width="240px"> <img src="THEMES/burn7_AnimePink/screenshot2.png" width="240px"> <img src="THEMES/burn7_AnimePink/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):

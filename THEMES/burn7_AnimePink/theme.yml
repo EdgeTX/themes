@@ -1,0 +1,17 @@
+---
+summary:
+  name: burn7_AnimePink
+  author: BurnoutAg7
+  info: Go tell them "I based you cringe"
+colors:
+  PRIMARY1: 0x8B1F3D
+  PRIMARY2: 0xFFFFFF
+  PRIMARY3: 0x6B0920
+  SECONDARY1: 0xD6386B
+  SECONDARY2: 0xFF5C7D
+  SECONDARY3: 0xFFF9F9
+  FOCUS: 0xFF98AF
+  EDIT: 0xEC98FD
+  ACTIVE: 0x93FFE0
+  WARNING: 0xFF5000
+  DISABLED: 0x8C8C8C
