@@ -1,0 +1,18 @@
+---
+summary:
+  name: RK-Cappuccino
+  author: ParkerEde
+  info: brown shades with good visibility
+
+colors:
+  PRIMARY1:   0x281000
+  PRIMARY2:   0xF8FCF8
+  PRIMARY3:   0x583410
+  SECONDARY1: 0x683418
+  SECONDARY2: 0xE0D8D0
+  SECONDARY3: 0xF8FCF8
+  FOCUS:      0xC05420
+  EDIT:       0x505050
+  ACTIVE:     0xC8B8A8
+  WARNING:    0x583818
+  DISABLED:   0x482008

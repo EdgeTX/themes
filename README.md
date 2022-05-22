@@ -4,15 +4,18 @@ For EdgeTX v2.5 compatible themes, please [goto the 2.5 branch](../../tree/2.5).
 
 [Click here](https://github.com/EdgeTX/themes/releases/download/latest/edgetx-themes.zip) to download the latest themes package which you can then copy onto your radios SD card. Alternately, if you want to see what the latest changes were, check the [latest release](https://github.com/EdgeTX/themes/releases/tag/latest) page.
 
-- Contents (ToC):
-  * [Online theme creator](#online-theme-creator)
-  * [List of themes available](#list-of-themes-available)
-  * [Description of an EdgeTX theme](#description-of-an-edgetx-theme)
-  * [Steps to contribute](#steps-to-contribute)
+**Contents (ToC):**
+- [Online theme creators](#online-theme-creators)
+- [List of themes available](#list-of-themes-available)
+- [Description of an EdgeTX theme](#description-of-an-edgetx-theme)
+- [Steps to contribute](#steps-to-contribute)
 
+## Online theme creators
+You have an option to create themes with easy-to-use online theme file creators:
+- [EdgeTX Theme Creator](https://edriskus.github.io/edgetx-theme-creator/) by edriskus
+- [EdgeTX Theme yml thingie](https://qwad.se/edgetx-theme-yml-thingie/) by Mattias Kallio
 
-## Online theme creator
-Please give the [online themer tool](https://edriskus.github.io/edgetx-theme-creator/) created by @edriskus a try. It is a nice, simple and easy to use app that lets you play with the theme colours and generate the required files.
+Both let you play with the theme colours and generate the required files.
 
 ## List of themes available
 
@@ -90,6 +93,12 @@ Please give the [online themer tool](https://edriskus.github.io/edgetx-theme-cre
 
 ### FM2M Vineyard
 <img src="THEMES/FM2M_VineYard/screenshot1.png" width="240px"> <img src="THEMES/FM2M_VineYard/screenshot2.png" width="240px"> <img src="THEMES/FM2M_VineYard/screenshot3.png" width="240px">
+
+### RK-Cappuccino
+<img src="THEMES/RK_Cappuccino/screenshot1.png" width="240px"> <img src="THEMES/RK_Cappuccino/screenshot2.png" width="240px"> <img src="THEMES/RK_Cappuccino/screenshot3.png" width="240px">
+
+### burn7_AnimePink
+<img src="THEMES/burn7_AnimePink/screenshot1.png" width="240px"> <img src="THEMES/burn7_AnimePink/screenshot2.png" width="240px"> <img src="THEMES/burn7_AnimePink/screenshot3.png" width="240px">
 
 ## Description of an EdgeTX theme
 
