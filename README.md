@@ -20,7 +20,7 @@ Both let you play with the theme colours and generate the required files.
 ## List of themes available
 
 ### RCVR Cool Blue
-<img src="THEMES/RCVR Cool Blue/screenshot1.png" width="240px"> <img src="THEMES/RCVR Cool Blue/screenshot2.png" width="240px"> <img src="THEMES/RCVR Cool Blue/screenshot3.png" width="240px"> <img src="THEMES/RCVR Cool Blue/screenshot4.png" width="240px">
+<img src="THEMES/RCVR Cool Blue/screenshot2.png" width="240px"> <img src="THEMES/RCVR Cool Blue/screenshot1.png" width="240px"> <img src="THEMES/RCVR Cool Blue/screenshot3.png" width="240px">
 
 ### RCVR_Christmas
 <img src="THEMES/RCVR_Christmas/screenshot1.png" width="240px"> <img src="THEMES/RCVR_Christmas/screenshot2.png" width="240px"> <img src="THEMES/RCVR_Christmas/screenshot3.png" width="240px">
