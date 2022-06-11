@@ -1,0 +1,18 @@
+---
+summary:
+  name: RCVR Cool Blue
+  author: RCVR(rcvideoreviews.com)
+  info: RCVR Cool Blue
+
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xF8FCF8
+  PRIMARY3:   0x1070C8
+  SECONDARY1: 0x706C68
+  SECONDARY2: 0xF8FCF8
+  SECONDARY3: 0xF0F4F0
+  FOCUS:      0x085CB8
+  EDIT:       0x0864C0
+  ACTIVE:     0xA8C0F8
+  WARNING:    0xF80000
+  DISABLED:   0x888C88
