@@ -1,0 +1,18 @@
+---
+summary:
+  name: Grown Up
+  author: Philippe Wechsler
+  info: Simple, clean and professional
+
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xF8FCF8
+  PRIMARY3:   0x90ACB8
+  SECONDARY1: 0x006068
+  SECONDARY2: 0x88A4B0
+  SECONDARY3: 0xE0ECF8
+  FOCUS:      0x283030
+  EDIT:       0xB8A888
+  ACTIVE:     0xB8A888
+  WARNING:    0xC80000
+  DISABLED:   0x888C88

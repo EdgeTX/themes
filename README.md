@@ -106,6 +106,9 @@ Both let you play with the theme colours and generate the required files.
 ### Bonafidepirate
 <img src="THEMES/Bonafidepirate/screenshot1.png" width="240px"> <img src="THEMES/Bonafidepirate/screenshot2.png" width="240px"> <img src="THEMES/Bonafidepirate/screenshot3.png" width="240px">
 
+### Grown Up
+<img src="THEMES/GrownUp/screenshot1.png" width="240px"> <img src="THEMES/GrownUp/screenshot2.png" width="240px"> <img src="THEMES/GrownUp/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
