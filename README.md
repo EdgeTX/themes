@@ -107,7 +107,7 @@ Both let you play with the theme colours and generate the required files.
 <img src="THEMES/Bonafidepirate/screenshot1.png" width="240px"> <img src="THEMES/Bonafidepirate/screenshot2.png" width="240px"> <img src="THEMES/Bonafidepirate/screenshot3.png" width="240px">
 
 ### Grown Up
-<img src="THEMES/GrownUp/screenshot1.png" width="240px"> <img src="THEMES/GrownUp/screenshot2.png" width="240px"> <img src="THEMES/GrownUp/screenshot3.png" width="240px">
+<img src="THEMES/GrownUp/Screenshot1.png" width="240px"> <img src="THEMES/GrownUp/Screenshot2.png" width="240px"> <img src="THEMES/GrownUp/Screenshot3.png" width="240px">
 
 ## Description of an EdgeTX theme
 
