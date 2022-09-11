@@ -109,6 +109,9 @@ Both let you play with the theme colours and generate the required files.
 ### Grown Up
 <img src="THEMES/GrownUp/Screenshot1.png" width="240px"> <img src="THEMES/GrownUp/Screenshot2.png" width="240px"> <img src="THEMES/GrownUp/Screenshot3.png" width="240px">
 
+### Brushed Aluminum
+<img src="THEMES/BrushedAluminum/screenshot1.png" width="240px"> <img src="THEMES/BrushedAluminum/screenshot2.png" width="240px"> <img src="THEMES/BrushedAluminum/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):

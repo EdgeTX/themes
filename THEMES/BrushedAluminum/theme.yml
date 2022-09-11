@@ -1,0 +1,17 @@
+---
+summary:
+  name: Brushed Aluminum
+  author: jurgelenas
+  info: ""
+colors:
+  PRIMARY1: 0x000000
+  PRIMARY2: 0xFFFFFF
+  PRIMARY3: 0xEAEAEA
+  SECONDARY1: 0xA9AAA6
+  SECONDARY2: 0xFFFFFF
+  SECONDARY3: 0xE4EEF2
+  FOCUS: 0x868686
+  EDIT: 0x009909
+  ACTIVE: 0xFFDE00
+  WARNING: 0xE00000
+  DISABLED: 0x8C8C8C
