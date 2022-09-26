@@ -130,10 +130,11 @@ A theme for EdgeTX consists minimally of 5 files, all located in a dedicated sub
 
 Optional:
   - **themename/background_480x272.png** (a background image for your theme in 480 x 272 pixel resolution, e.g. for TX16S, T16, X10, X12S)
+  - **themename/background_480x320.png** (a background image for your theme in 480 x 320 pixel resolution, e.g. for PL18)
   - **themename/background_320x480.png** (a background image for your theme in 320 x 480 pixel resolution, e.g. for NV14)
   - **themename/readme.txt** (any notes or information you wish to share with your theme)
 
-Images should all be in PNG format, and 480x272 pixels in size, except the optional 320x480 background image.
+Images should all be in PNG format, and 480x272 pixels in size, except the optional 320x480 and 480x320 background images.
 
 Please refer to the `example` folder for an example of the expected layout.
 
