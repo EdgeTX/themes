@@ -1,6 +1,6 @@
 # Themes directory for third party themes for EdgeTX
 
-For EdgeTX v2.5 compatible themes, please [goto the 2.5 branch](../../tree/2.5).
+For older, with EdgeTX v2.5 compatible themes, please [goto the 2.5 branch](../../tree/2.5).
 
 [Click here](https://github.com/EdgeTX/themes/releases/download/latest/edgetx-themes.zip) to download the latest themes package which you can then copy onto your radios SD card. Alternately, if you want to see what the latest changes were, check the [latest release](https://github.com/EdgeTX/themes/releases/tag/latest) page.
 
