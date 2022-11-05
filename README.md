@@ -115,6 +115,9 @@ Both let you play with the theme colours and generate the required files.
 ### RotorOxio Gold&Blood!
 <img src="THEMES/RotorOxio_Gold-Blood/screenshot1.png" width="240px"> <img src="THEMES/RotorOxio_Gold-Blood/screenshot2.png" width="240px"> <img src="THEMES/RotorOxio_Gold-Blood/screenshot3.png" width="240px">
 
+### Wolfman
+<img src="THEMES/Wolfman/screenshot1.png" width="240px"> <img src="THEMES/Wolfman/screenshot2.png" width="240px"> <img src="THEMES/Wolfman/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
