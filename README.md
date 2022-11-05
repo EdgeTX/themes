@@ -168,4 +168,3 @@ If you want to contribute at current early stage in spite of the warning above, 
   <br>If you are a Windows user and looking for a graphical tool for Git, have a look at e.g. <a href="https://tortoisegit.org/">TortoiseGit</a></li>
   <li>Make a pull request by clicking the big green "Compare & Pull Request" button in GitHub in your fork's branch.</li>
 </ol>
- 
