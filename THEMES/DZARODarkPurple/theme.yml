@@ -1,0 +1,17 @@
+---
+summary:
+  name: DZARO Dark Purple
+  author: DZARO
+  info: Created by DZARO.
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xE8ECF8
+  PRIMARY3:   0x484470
+  SECONDARY1: 0x101410
+  SECONDARY2: 0x8874A0
+  SECONDARY3: 0xB8B4D0
+  FOCUS:      0x600070
+  EDIT:       0x401038
+  ACTIVE:     0xC830F0
+  WARNING:    0xC80000
+  DISABLED:   0x606060
