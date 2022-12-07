@@ -19,9 +19,6 @@ Both let you play with the theme colours and generate the required files.
 
 ## List of themes available
 
-### DZARO Dark Purple
-<img src="THEMES/DZARODarkPurple/screenshot1.png" width="240px"> <img src="THEMES/DZARODarkPurple/screenshot2.png" width="240px"> <img src="THEMES/DZARODarkPurple/screenshot3.png" width="240px">
-
 ### RCVR Cool Blue
 <img src="THEMES/RCVR Cool Blue/screenshot4.png" width="240px"> <img src="THEMES/RCVR Cool Blue/screenshot1.png" width="240px"> <img src="THEMES/RCVR Cool Blue/screenshot3.png" width="240px">
 
@@ -120,6 +117,9 @@ Both let you play with the theme colours and generate the required files.
 
 ### Wolfman
 <img src="THEMES/Wolfman/screenshot1.png" width="240px"> <img src="THEMES/Wolfman/screenshot2.png" width="240px"> <img src="THEMES/Wolfman/screenshot3.png" width="240px">
+
+### DZARO Dark Purple
+<img src="THEMES/DZARODarkPurple/screenshot1.png" width="240px"> <img src="THEMES/DZARODarkPurple/screenshot2.png" width="240px"> <img src="THEMES/DZARODarkPurple/screenshot3.png" width="240px">
 
 ## Description of an EdgeTX theme
 
