@@ -1,0 +1,17 @@
+---
+summary:
+  name: Ghost in the Machine
+  author: GhostBranchFPV
+  info: Made with love.
+colors:
+ PRIMARY1:   0x000000
+ PRIMARY2:   0xFF0000
+ PRIMARY3:   0x3C4D54
+ SECONDARY1: 0x252F33
+ SECONDARY2: 0x7A0000
+ SECONDARY3: 0x3D4447
+ FOCUS:      0x17444D
+ EDIT:       0xFFA526
+ ACTIVE:     0xFFA526
+ WARNING:    0xFF9500
+ DISABLED:   0x661100
