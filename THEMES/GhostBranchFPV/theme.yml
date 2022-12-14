@@ -1,0 +1,17 @@
+---
+summary:
+  name: GhostBranchFPV
+  author: GhostBranchFPV
+  info: thinkingpixels.com
+colors:
+ PRIMARY1:   0xFF54FF
+ PRIMARY2:   0x40E6FF
+ PRIMARY3:   0x60008C
+ SECONDARY1: 0x880FBF
+ SECONDARY2: 0xFFABFC
+ SECONDARY3: 0x1B041F
+ FOCUS:      0x000000
+ EDIT:       0xFF54FF
+ ACTIVE:     0x40E6FF
+ WARNING:    0xE500E6
+ DISABLED:   0x490D54

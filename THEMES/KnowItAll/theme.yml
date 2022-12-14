@@ -1,0 +1,17 @@
+---
+summary:
+  name: FPV Know It All
+  author: GhostBranchFPV
+  info: fpvknowitall.com
+colors:
+ PRIMARY1:   0x000000
+ PRIMARY2:   0xFFC640
+ PRIMARY3:   0x7808A1
+ SECONDARY1: 0x9A1EC7
+ SECONDARY2: 0x9A1EC7
+ SECONDARY3: 0x643C91
+ FOCUS:      0x088DFA
+ EDIT:       0xFF38F5
+ ACTIVE:     0x4DBEFF
+ WARNING:    0x512680
+ DISABLED:   0x521A66
