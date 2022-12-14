@@ -20,15 +20,6 @@ Both let you play with the theme colours and generate the required files.
 ## List of themes available
 
 
-### Ghost in the Machine
-<img src="THEMES/GhostInTheMachine/screenshot1.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot2.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot3.png" width="240px">
-
-### FPV Know It All
-<img src="THEMES/KnowItAll/screenshot1.png" width="240px"> <img src="THEMES/KnowItAll/screenshot2.png" width="240px"> <img src="THEMES/KnowItAll/screenshot3.png" width="240px">
-
-### GhostBranchFPV
-<img src="THEMES/GhostBranchFPV/screenshot1.png" width="240px"> <img src="THEMES/GhostBranchFPV/screenshot2.png" width="240px"> <img src="THEMES/GhostBranchFPV/screenshot3.png" width="240px">
-
 ### RCVR Cool Blue
 <img src="THEMES/RCVR Cool Blue/screenshot4.png" width="240px"> <img src="THEMES/RCVR Cool Blue/screenshot1.png" width="240px"> <img src="THEMES/RCVR Cool Blue/screenshot3.png" width="240px">
 
@@ -130,6 +121,15 @@ Both let you play with the theme colours and generate the required files.
 
 ### DZARO Dark Purple
 <img src="THEMES/DZARODarkPurple/screenshot1.png" width="240px"> <img src="THEMES/DZARODarkPurple/screenshot2.png" width="240px"> <img src="THEMES/DZARODarkPurple/screenshot3.png" width="240px">
+
+### GhostBranchFPV
+<img src="THEMES/GhostBranchFPV/screenshot1.png" width="240px"> <img src="THEMES/GhostBranchFPV/screenshot2.png" width="240px"> <img src="THEMES/GhostBranchFPV/screenshot3.png" width="240px">
+
+### FPV Know It All
+<img src="THEMES/KnowItAll/screenshot1.png" width="240px"> <img src="THEMES/KnowItAll/screenshot2.png" width="240px"> <img src="THEMES/KnowItAll/screenshot3.png" width="240px">
+
+### Ghost in the Machine
+<img src="THEMES/GhostInTheMachine/screenshot1.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot2.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot3.png" width="240px">
 
 ## Description of an EdgeTX theme
 
