@@ -1,0 +1,17 @@
+---
+summary:
+  name: JWST-Pillars
+  author: Keith Luneau/jwidess
+  info: "Modified Keith's Bonafidepirate color scheme with a background of the Pillars of Creation from JWST"
+colors:
+  PRIMARY1: 0x000000
+  PRIMARY2: 0xF8FCF8
+  PRIMARY3: 0x282C28
+  SECONDARY1: 0x404040
+  SECONDARY2: 0x888C88
+  SECONDARY3: 0xD8DCD8
+  FOCUS: 0xC72020
+  EDIT: 0x505450
+  ACTIVE: 0x2870B8
+  WARNING: 0xD00018
+  DISABLED: 0x6B6E6B
