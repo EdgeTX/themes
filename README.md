@@ -130,6 +130,9 @@ Both let you play with the theme colours and generate the required files.
 ### Ghost in the Machine
 <img src="THEMES/GhostInTheMachine/screenshot1.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot2.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot3.png" width="240px">
 
+### JWST-Pillars
+<img src="THEMES\JWST-Pillars/screenshot1.png" height="136x"> <img src="THEMES/JWST-Pillars/screenshot2.png" width="240px"><img src="THEMES/JWST-Pillars/screenshot3.png" width="240px"> <img src="THEMES/JWST-Pillars/screenshot4.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
@@ -159,7 +162,7 @@ Please refer to [theme documentation](structure.md) for more information on the 
 
 Please note that themes are currently still in development phase in EdgeTX and the specification can change. Thus please be prepared that at some point in (near) future you might be asked to update your submission, as we change the specification, e.g. about the image size or YAML style required.
 
-In order to take screenshots using the EdgeTX simulator, first start EdgeTX Companion, pick from menu `Settings` the menu item with similar name `Settings...`
+In order to take screenshots using the EdgeTX simulator, first start [EdgeTX Companion](http://edgetx.org/getedgetx.html#:~:text=Looking%20for%20EdgeTX%20Companion%3F), pick from menu `Settings` the menu item with similar name `Settings...`
 Navigate to `Simulator Settings` tab and provide a folder where you would like the simulator to save the images (here in example `Z:\Multimedia`):
 
 <img src="doc/SimuScreensShotFolder.png">
