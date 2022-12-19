@@ -5,17 +5,18 @@ For older, EdgeTX v2.5 compatible themes, please [go to the 2.5 branch](../../tr
 [Click here](https://github.com/EdgeTX/themes/releases/download/latest/edgetx-themes.zip) to download the latest themes package which you can then copy onto your radios SD card. Alternately, if you want to see what the latest changes were, check the [latest release](https://github.com/EdgeTX/themes/releases/tag/latest) page.
 
 **Contents (ToC):**
-- [Online theme creators](#online-theme-creators)
+- [Online theme creators and templates](#online-theme-creators-and-templates)
 - [List of themes available](#list-of-themes-available)
 - [Description of an EdgeTX theme](#description-of-an-edgetx-theme)
 - [Steps to contribute](#steps-to-contribute)
 
-## Online theme creators
-You have an option to create themes with easy-to-use online theme file creators:
+## Online theme creators and templates
+You have an option to create themes with easy-to-use online theme file creators or templates:
 - [EdgeTX Theme Creator](https://edriskus.github.io/edgetx-theme-creator/) by edriskus
 - [EdgeTX Theme yml thingie](https://qwad.se/edgetx-theme-yml-thingie/) by Mattias Kallio
+- [EdgeTX Theme Photoshop Template](https://thinkingpixels.com/downloads/EdgeTX_2.8_Theme_Template_by_GhostBranchFPV.psd) by GhostBranchFPV
 
-Both let you play with the theme colours and generate the required files.
+These let you play with the theme colours and generate the required files.
 
 ## List of themes available
 
