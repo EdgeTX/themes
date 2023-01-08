@@ -1,0 +1,17 @@
+---
+summary:
+  name: VAluminium_white
+  author: Vespassassina
+  info: Aluminium White
+colors:
+  PRIMARY1: 0x636363
+  PRIMARY2: 0xFFFFFF
+  PRIMARY3: 0xFFFFFF
+  SECONDARY1: 0x777777
+  SECONDARY2: 0x818181
+  SECONDARY3: 0xCCCCCC
+  FOCUS: 0x4E4E4E
+  EDIT: 0xAAAAAA
+  ACTIVE: 0xC2C2C2
+  WARNING: 0xFF5269
+  DISABLED: 0x6B6B6B
