@@ -1,0 +1,17 @@
+---
+summary:
+  name: VCarbon_uv
+  author: Vespassassina
+  info: Carbon and UV light
+colors:
+  PRIMARY1: 0x8800FF
+  PRIMARY2: 0x9013FE
+  PRIMARY3: 0x9013FE
+  SECONDARY1: 0x3A3A3A
+  SECONDARY2: 0x808080
+  SECONDARY3: 0x151233
+  FOCUS: 0x550066
+  EDIT: 0x948CFF
+  ACTIVE: 0xC728E6
+  WARNING: 0xFF1C3C
+  DISABLED: 0x6B6B6B
