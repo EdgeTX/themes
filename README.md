@@ -132,7 +132,10 @@ These let you play with the theme colours and generate the required files.
 <img src="THEMES/GhostInTheMachine/screenshot1.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot2.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot3.png" width="240px">
 
 ### JWST-Pillars
-<img src="THEMES\JWST-Pillars/screenshot1.png" height="136x"> <img src="THEMES/JWST-Pillars/screenshot2.png" width="240px"><img src="THEMES/JWST-Pillars/screenshot3.png" width="240px"> <img src="THEMES/JWST-Pillars/screenshot4.png" width="240px">
+<img src="THEMES/JWST-Pillars/screenshot1.png" height="136x"> <img src="THEMES/JWST-Pillars/screenshot2.png" width="240px"><img src="THEMES/JWST-Pillars/screenshot3.png" width="240px"> <img src="THEMES/JWST-Pillars/screenshot4.png" width="240px">
+
+### Crs_ColorfulCubes
+<img src="THEMES/Crs_ColorfulCubes/screenshot1.png" height="136x"> <img src="THEMES/Crs_ColorfulCubes/screenshot2.png" width="240px"><img src="THEMES/Crs_ColorfulCubes/screenshot3.png" width="240px"> <img src="THEMES/Crs_ColorfulCubes/screenshot4.png" width="240px">
 
 ## Description of an EdgeTX theme
 
