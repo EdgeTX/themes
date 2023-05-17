@@ -1,0 +1,17 @@
+---
+summary:
+  name: Crs_ColorfulCubes
+  author: Curious
+  info: Filled with colorful cubes, this is a rich and vivid space.
+colors:
+  PRIMARY1: 0x000000
+  PRIMARY2: 0xFFFFFF
+  PRIMARY3: 0x0C3F66
+  SECONDARY1: 0xFE13B7
+  SECONDARY2: 0xB6F2F2
+  SECONDARY3: 0xE4F1F2
+  FOCUS: 0x4A90E2
+  EDIT: 0xB8E986
+  ACTIVE: 0xF8E71C
+  WARNING: 0xD0021B
+  DISABLED: 0x4A4A4A
