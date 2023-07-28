@@ -132,10 +132,25 @@ These let you play with the theme colours and generate the required files.
 <img src="THEMES/GhostInTheMachine/screenshot1.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot2.png" width="240px"> <img src="THEMES/GhostInTheMachine/screenshot3.png" width="240px">
 
 ### JWST-Pillars
-<img src="THEMES/JWST-Pillars/screenshot1.png" height="136x"> <img src="THEMES/JWST-Pillars/screenshot2.png" width="240px"><img src="THEMES/JWST-Pillars/screenshot3.png" width="240px"> <img src="THEMES/JWST-Pillars/screenshot4.png" width="240px">
+<img src="THEMES/JWST-Pillars/screenshot1.png" height="136x"> <img src="THEMES/JWST-Pillars/screenshot2.png" width="240px"> <img src="THEMES/JWST-Pillars/screenshot3.png" width="240px"> <img src="THEMES/JWST-Pillars/screenshot4.png" width="240px">
 
 ### Crs_ColorfulCubes
 <img src="THEMES/Crs_ColorfulCubes/screenshot1.png" height="136x"> <img src="THEMES/Crs_ColorfulCubes/screenshot2.png" width="240px"><img src="THEMES/Crs_ColorfulCubes/screenshot3.png" width="240px"> <img src="THEMES/Crs_ColorfulCubes/screenshot4.png" width="240px">
+
+### Vespassassina Alu-white
+<img src="THEMES\VAlu_white/screenshot1.png" height="136x"> <img src="THEMES/VAlu_white/screenshot2.png" width="240px"> <img src="THEMES/VAlu_white/screenshot3.png" width="240px">
+
+### Vespassassina Carbon-blue
+<img src="THEMES\VCarbon_blue/screenshot1.png" height="136x"> <img src="THEMES/VCarbon_blue/screenshot2.png" width="240px"> <img src="THEMES/VCarbon_blue/screenshot3.png" width="240px">
+
+### Vespassassina Carbon-lime
+<img src="THEMES\VCarbon_lime/screenshot1.png" height="136x"> <img src="THEMES/VCarbon_lime/screenshot2.png" width="240px"> <img src="THEMES/VCarbon_lime/screenshot3.png" width="240px">
+
+### Vespassassina Carbon-orange
+<img src="THEMES\VCarbon_orange/screenshot1.png" height="136x"> <img src="THEMES/VCarbon_orange/screenshot2.png" width="240px"> <img src="THEMES/VCarbon_orange/screenshot3.png" width="240px">
+
+### Vespassassina Carbon-uv
+<img src="THEMES\VCarbon_uv/screenshot1.png" height="136x"> <img src="THEMES/VCarbon_uv/screenshot2.png" width="240px"> <img src="THEMES/VCarbon_uv/screenshot4.png" width="240px">
 
 ## Description of an EdgeTX theme
 

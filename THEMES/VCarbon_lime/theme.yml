@@ -1,0 +1,17 @@
+---
+summary:
+  name: VCarbon_Lime
+  author: Vespassassina
+  info: Carbon Lime
+colors:
+  PRIMARY1: 0xAAFF00
+  PRIMARY2: 0xBEBEBE
+  PRIMARY3: 0xAAFF00
+  SECONDARY1: 0x3A3A3A
+  SECONDARY2: 0x747474
+  SECONDARY3: 0x5D5D5D
+  FOCUS: 0x000000
+  EDIT: 0xAAFF00
+  ACTIVE: 0xAAFF00
+  WARNING: 0xB4001A
+  DISABLED: 0x6B6B6B
