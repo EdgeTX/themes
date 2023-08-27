@@ -153,7 +153,7 @@ These let you play with the theme colours and generate the required files.
 <img src="THEMES\VCarbon_uv/screenshot1.png" height="136x"> <img src="THEMES/VCarbon_uv/screenshot2.png" width="240px"> <img src="THEMES/VCarbon_uv/screenshot4.png" width="240px">
 
 ### Clean Theme
-<img src="THEMES\Clean_Theme/screenshot1.png" height="136x"> <img src="THEMES/Clean_Theme/screenshot2.png" width="240px"> <img src="THEMES/Clean Theme/screenshot3.png" width="240px">
+<img src="THEMES\Clean_Theme/screenshot1.png" height="136x"> <img src="THEMES/Clean_Theme/screenshot2.png" width="240px"> <img src="THEMES/Clean_Theme/screenshot3.png" width="240px">
 
 ## Description of an EdgeTX theme
 
