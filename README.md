@@ -152,6 +152,9 @@ These let you play with the theme colours and generate the required files.
 ### Vespassassina Carbon-uv
 <img src="THEMES\VCarbon_uv/screenshot1.png" height="136x"> <img src="THEMES/VCarbon_uv/screenshot2.png" width="240px"> <img src="THEMES/VCarbon_uv/screenshot4.png" width="240px">
 
+### Clean Theme
+<img src="THEMES\Clean_Theme/screenshot1.png" height="136x"> <img src="THEMES/Clean_Theme/screenshot2.png" width="240px"> <img src="THEMES/Clean Theme/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
