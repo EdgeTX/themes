@@ -5,7 +5,7 @@ summary:
   info: A moderately high-contrast, clean theme
 
 colors:
-  PRIMARY1:   0x000020
+  PRIMARY1:   0x000000
   PRIMARY2:   0xF8FCF8
   PRIMARY3:   0x000000
   SECONDARY1: 0x000000
