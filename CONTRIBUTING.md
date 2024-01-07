@@ -1,4 +1,4 @@
-# How to contribute to the EdgeTX Themes Library
+# How to contribute to the EdgeTX Themes directory
 
 ## Did you intend to create a new theme?
 - New themes are always welcome. We simply ask that you ensure that your theme complies with [GitHub's acceptable use policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-hate-speech-and-discrimination).
