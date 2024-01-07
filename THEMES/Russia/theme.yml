@@ -1,0 +1,17 @@
+---
+summary: 
+   name: "RUSSIA"
+   author: "kobakirill"
+   info: "@kobakirill"
+colors: 
+   PRIMARY1: 0x000000
+   PRIMARY2: 0xF8FCF8
+   PRIMARY3: 0x282CA8
+   SECONDARY1: 0x2054C8
+   SECONDARY2: 0x5058D0
+   SECONDARY3: 0xC8C8D8
+   FOCUS: 0xF00000
+   EDIT: 0x3838B8
+   ACTIVE: 0x0010F0
+   WARNING: 0xF80000
+   DISABLED: 0x3050B8
