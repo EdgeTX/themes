@@ -158,6 +158,9 @@ These let you play with the theme colours and generate the required files.
 ### Dark Theme
 <img src="THEMES/Dark_Theme/screenshot1.png" height="136x"> <img src="THEMES/Dark_Theme/screenshot2.png" width="240px"> <img src="THEMES/Dark_Theme/screenshot3.png" width="240px">
 
+### Kobakirill_Russia
+<img src="THEMES/Kobakirill_Russia/screenshot1.png" height="136x"> <img src="THEMES/Kobakirill_Russia/screenshot2.png" width="240px"> <img src="THEMES/Kobakirill_Russia/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
