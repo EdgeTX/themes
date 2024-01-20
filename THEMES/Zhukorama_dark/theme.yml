@@ -1,0 +1,17 @@
+---
+summary: 
+   name: "Zhukorama dark"
+   author: "@Kobakirill @Coffemansky"
+   info: "@ZhukoRamaFPVlog"
+colors: 
+   PRIMARY1: 0xF8FCF8
+   PRIMARY2: 0x002010
+   PRIMARY3: 0x484848
+   SECONDARY1: 0x488408
+   SECONDARY2: 0x60A018
+   SECONDARY3: 0x000000
+   FOCUS: 0xB8BCB8
+   EDIT: 0x407400
+   ACTIVE: 0xB01010
+   WARNING: 0xE00000
+   DISABLED: 0x407400
