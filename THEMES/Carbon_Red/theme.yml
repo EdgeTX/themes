@@ -1,0 +1,17 @@
+---
+summary: 
+   name: "Carbon Red"
+   author: "Gabriel"
+   info: "A nice match for the TX16 Carbon Red."
+colors: 
+   PRIMARY1: 0x000000
+   PRIMARY2: 0xF8F8F8
+   PRIMARY3: 0x202020
+   SECONDARY1: 0xC80000
+   SECONDARY2: 0x000000
+   SECONDARY3: 0xE8E8E8
+   FOCUS: 0x909090
+   EDIT: 0x009808
+   ACTIVE: 0xB0D4F8
+   WARNING: 0xE8B850
+   DISABLED: 0x606460
