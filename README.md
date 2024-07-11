@@ -164,6 +164,9 @@ These let you play with the theme colours and generate the required files.
 ### Zhukorama_dark
 <img src="THEMES/Zhukorama_dark/screenshot1.png" height="136x"> <img src="THEMES/Zhukorama_dark/screenshot2.png" width="240px"> <img src="THEMES/Zhukorama_dark/screenshot3.png" width="240px">
 
+### Carbon_Red 
+<img src="THEMES/Carbon_Red/screenshot1.png" height="136x"> <img src="THEMES/Carbon_Red/screenshot2.png" width="240px"> <img src="THEMES/Carbon_Red/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
