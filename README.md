@@ -184,6 +184,7 @@ Optional:
   - **themename/background_480x272.png** (a background image for your theme in 480 x 272 pixel resolution, e.g. for TX16S, T16, X10, X12S)
   - **themename/background_480x320.png** (a background image for your theme in 480 x 320 pixel resolution, e.g. for PL18, PL18EV, T15)
   - **themename/background_320x480.png** (a background image for your theme in 320 x 480 pixel resolution, e.g. for EL18, NV14)
+  - **themename/background_320x240.png** (a background image for your theme in 320 x 240 pixel resolution)
   - **themename/readme.txt** (any notes or information you wish to share with your theme)
 
 Images should all be in PNG format, and 480x272 pixels in size, except the optional 320x480 and 480x320 background images.
