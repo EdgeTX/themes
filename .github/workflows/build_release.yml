@@ -33,10 +33,10 @@ jobs:
           if-no-files-found: error
 
   upload:
-    name: Upload latest release
-    needs: package
-    runs-on: ubuntu-latest
     if: github.event_name != 'pull_request'
+    needs: package
+    name: Upload latest release
+    runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
@@ -48,10 +48,10 @@ jobs:
       #   run: ls -R
 
       - name: Upload binaries to release
-        uses: marvinpinto/action-automatic-releases@latest
+        uses: crowbarmaster/GH-Automatic-Releases@latest
         with:
           title: "Latest Themes Package"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          files: release/edgetx-themes.zip
-          automatic_release_tag: 'latest'
+          automatic_release_tag: "latest"
           prerelease: false
+          files: release/edgetx-themes.zip
