@@ -1,0 +1,17 @@
+---
+summary:
+  name: Finca La Maria
+  author: Myuzu
+  info: Muted coffee theme
+colors:
+  PRIMARY1: 0x3D352A
+  PRIMARY2: 0xDDCCBB
+  PRIMARY3: 0xE8AE5B
+  SECONDARY1: 0x3B2121
+  SECONDARY2: 0x998356
+  SECONDARY3: 0xBBAA99
+  FOCUS: 0xD63A3A
+  EDIT: 0x6495ED
+  ACTIVE: 0xFFA75D
+  WARNING: 0xCC5533
+  DISABLED: 0x716161
