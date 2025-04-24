@@ -170,6 +170,12 @@ These let you play with the theme colours and generate the required files.
 ### Finca La Maria
 <img src="THEMES/Finca_La_Maria/screenshot1.png" width="240px"> <img src="THEMES/Finca_La_Maria/screenshot2.png" width="240px"> <img src="THEMES/Finca_La_Maria/screenshot3.png" width="240px">
 
+### Secret Garden KR
+<img src="THEMES/Secret_Garden_KR/screenshot1.png" width="240px"> <img src="THEMES/Secret_Garden_KR/screenshot2.png" width="240px"> <img src="THEMES/Secret_Garden_KR/screenshot3.png" width="240px">
+
+### Hanji
+<img src="THEMES/Hanji/screenshot1.png" width="240px"> <img src="THEMES/Hanji/screenshot2.png" width="240px"> <img src="THEMES/Hanji/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
