@@ -1,0 +1,21 @@
+
+---
+summary:
+  name: Hanji
+  info: Theme inspired by traditional Korean paper, Hanji
+  author: Siyeong Jang
+  description: A theme inspired by the delicate and elegant texture of Hanji, Korea's traditional handmade paper.
+
+colors:
+  PRIMARY1:   0x2A3B3F # 어두운 블루그레이 (텍스트용)
+  PRIMARY2:   0xE8F1F3 # 밝은 회청색 배경 (기본 배경)
+  PRIMARY3:   0xBFD6DC # 연한 청회색 (보조 배경)
+  SECONDARY1: 0x60767B # 중간 블루그레이
+  SECONDARY2: 0xC7DCE0 # 밝은 하이라이트용 블루그레이
+  SECONDARY3: 0xE3EFF1 # 가장 밝은 음영 (액센트용)
+  FOCUS:      0x4D96A3 # 강조용 진청록 (선택 항목 등)
+  EDIT:       0x5C7A80 # 편집 상태 강조 (차분한 청록)
+  ACTIVE:     0x83A7AC # 활성화된 항목
+  WARNING:    0xBB5544 # 경고: 붉은 갈색 (기존과 유사)
+  DISABLED:   0xBFC9C9 # 비활성화: 연한 회청색
+
