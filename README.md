@@ -173,6 +173,12 @@ These let you play with the theme colours and generate the required files.
 ### Secret Garden KR
 <img src="THEMES/Secret_Garden_KR/screenshot1.png" width="240px"> <img src="THEMES/Secret_Garden_KR/screenshot2.png" width="240px"> <img src="THEMES/Secret_Garden_KR/screenshot3.png" width="240px">
 
+### Hanji – inspired by traditional Korean handmade paper
+<img src="THEMES/Hanji/screenshot1.png" width="240px"> <img src="THEMES/Hanji/screenshot2.png" width="240px"> <img src="THEMES/Hanji/screenshot3.png" width="240px">
+
+### Hunminjeongeum – classic Hangul-based style
+<img src="THEMES/Hunminjeongeum/screenshot1.png" width="240px"> <img src="THEMES/Hunminjeongeum/screenshot2.png" width="240px"> <img src="THEMES/Hunminjeongeum/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
