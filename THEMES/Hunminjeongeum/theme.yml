@@ -1,0 +1,22 @@
+
+---
+summary:
+  name: Hunminjeongeum
+  info: Theme inspired by the original Korean script, Hunminjeongeum
+  author: Siyeong Jang
+  description: A theme inspired by the timeless beauty and historical significance of Hunminjeongeum, the foundation of the Korean writing system.
+
+colors:
+  PRIMARY1:   0x3A3328 # 텍스트: 짙은 갈색 (묵색 느낌)
+  PRIMARY2:   0xF6F2E3 # 기본 배경: 밝은 한지색
+  PRIMARY3:   0xE3DBC8 # 부드러운 베이지 보조 배경
+  SECONDARY1: 0xA5987C # 연한 황토톤 강조조
+  SECONDARY2: 0xC7B497 # 보조 텍스트 배경
+  SECONDARY3: 0xE8E0CD # 카드/버튼용 연베이지
+  FOCUS:      0xA88454 # 강조: 황토+진한 갈색 계열
+  EDIT:       0x8B7355 # 편집 상태 강조: 고서 테두리 느낌
+  ACTIVE:     0xB49E7D # 활성화 버튼: 채도 낮은 황토
+  WARNING:    0xC04B3D # 경고: 어두운 주황-붉은 갈색
+  DISABLED:   0xDAD2BE # 비활성화: 연한 고서 배경 느낌
+
+

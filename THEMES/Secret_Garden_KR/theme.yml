@@ -9,7 +9,7 @@ colors:
   PRIMARY1:   0x3A3D28 # 어두운 카키 (텍스트)
   PRIMARY2:   0xF6FBEF # 밝은 배경 (노란빛 흰색)
   PRIMARY3:   0x9DA56D # 이 이미지 기반 색상
-  SECONDARY1: 0x7F8751 # 중간 올리브
+  SECONDARY1: 0x8E965A # 중간 올리브
   SECONDARY2: 0xA9B47F # 연한 카키
   SECONDARY3: 0xC6D2A4 # 하이라이트 톤
   FOCUS:      0x6C9966 # 초록-브라운 조화
@@ -17,3 +17,4 @@ colors:
   ACTIVE:     0xB39C68 # 황토 계열 강조
   WARNING:    0xB24C32 # 붉은 갈색 경고
   DISABLED:   0xB0BBA4 # 연한 회녹색
+
