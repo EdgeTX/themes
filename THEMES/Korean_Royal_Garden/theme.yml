@@ -1,0 +1,19 @@
+---
+summary:
+  name: Korean Royal Garden
+  info: Korean Royal Garden Theme
+  author: "Siyeong Jang"
+  description: "A theme that captures the serene beauty of Huwon, the rear garden of Changdeokgung Palace in Korea."
+
+colors:
+  PRIMARY1:   0x2E311F # 텍스트용
+  PRIMARY2:   0xF8FBEF # 밝은 배경
+  PRIMARY3:   0xA2AB74 # 이미지 기반
+  SECONDARY1: 0x78814A # 중간 올리브
+  SECONDARY2: 0xB2BE8B # 연한 카키
+  SECONDARY3: 0xD2DFB1 # 하이라이트
+  FOCUS:      0x6E9D5C # 초록-브라운 중간값
+  EDIT:       0x46502A # 편집 강조
+  ACTIVE:     0xC1A873 # 황토 강조
+  WARNING:    0xB0452C # 경고색
+  DISABLED:   0xA8B29A # 회녹색
