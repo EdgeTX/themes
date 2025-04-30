@@ -164,20 +164,20 @@ These let you play with the theme colours and generate the required files.
 ### Zhukorama_dark
 <img src="THEMES/Zhukorama_dark/screenshot1.png" height="136x"> <img src="THEMES/Zhukorama_dark/screenshot2.png" width="240px"> <img src="THEMES/Zhukorama_dark/screenshot3.png" width="240px">
 
-### Carbon_Red 
+### Carbon_Red
 <img src="THEMES/Carbon_Red/screenshot1.png" height="136x"> <img src="THEMES/Carbon_Red/screenshot2.png" width="240px"> <img src="THEMES/Carbon_Red/screenshot3.png" width="240px">
 
 ### Finca La Maria
 <img src="THEMES/Finca_La_Maria/screenshot1.png" width="240px"> <img src="THEMES/Finca_La_Maria/screenshot2.png" width="240px"> <img src="THEMES/Finca_La_Maria/screenshot3.png" width="240px">
-
-### Secret Garden KR
-<img src="THEMES/Secret_Garden_KR/screenshot1.png" width="240px"> <img src="THEMES/Secret_Garden_KR/screenshot2.png" width="240px"> <img src="THEMES/Secret_Garden_KR/screenshot3.png" width="240px">
 
 ### Hanji – inspired by traditional Korean handmade paper
 <img src="THEMES/Hanji/screenshot1.png" width="240px"> <img src="THEMES/Hanji/screenshot2.png" width="240px"> <img src="THEMES/Hanji/screenshot3.png" width="240px">
 
 ### Hunminjeongeum – classic Hangul-based style
 <img src="THEMES/Hunminjeongeum/screenshot1.png" width="240px"> <img src="THEMES/Hunminjeongeum/screenshot2.png" width="240px"> <img src="THEMES/Hunminjeongeum/screenshot3.png" width="240px">
+
+### Korean Royal Garden
+<img src="THEMES/Korean_Royal_Garden/screenshot1.png" width="240px"> <img src="THEMES/Korean_Royal_Garden/screenshot2.png" width="240px"> <img src="THEMES/Korean_Royal_Garden/screenshot3.png" width="240px">
 
 ## Description of an EdgeTX theme
 
