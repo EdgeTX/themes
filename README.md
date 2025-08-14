@@ -179,6 +179,9 @@ These let you play with the theme colours and generate the required files.
 ### Korean Royal Garden
 <img src="THEMES/Korean_Royal_Garden/screenshot1.png" width="240px"> <img src="THEMES/Korean_Royal_Garden/screenshot2.png" width="240px"> <img src="THEMES/Korean_Royal_Garden/screenshot3.png" width="240px">
 
+### Bionic Theme
+<img src="THEMES/Bionic_Theme/screenshot1.png" width="240px"> <img src="THEMES/Bionic_Theme/screenshot2.png" width="240px"> <img src="THEMES/Bionic_Theme/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
