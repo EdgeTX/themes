@@ -1,0 +1,18 @@
+---
+summary:
+  name: Bionic Theme
+  author: Adrian Eilingsfeld
+  info: Festo Bionic Learning Network clean theme
+
+colors:
+  PRIMARY1:   0x000000
+  PRIMARY2:   0xF8FCF8
+  PRIMARY3:   0x000000
+  SECONDARY1: 0x000000
+  SECONDARY2: 0xB6BEC6
+  SECONDARY3: 0xE5E8EB
+  FOCUS:      0x0091DC
+  EDIT:       0xB6BEC6
+  ACTIVE:     0xC8E6FA
+  WARNING:    0x0091DC
+  DISABLED:   0xC8E6FA
