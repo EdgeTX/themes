@@ -1,0 +1,18 @@
+---
+summary:
+  name: Debian Light
+  author: Samuel Henrique <samueloph>
+  info: Debian light theme
+colors:
+  PRIMARY1: 0x000000
+  PRIMARY2: 0xFFFFFF
+  PRIMARY3: 0x650025
+  SECONDARY1: 0xA80030
+  SECONDARY2: 0xa54661
+  SECONDARY3: 0xFFFFFF
+  FOCUS: 0xff0000
+  EDIT: 0x000000
+  ACTIVE: 0xFFA851
+  WARNING: 0xE0CC00
+  DISABLED: 0x8C8C8C
+

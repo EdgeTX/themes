@@ -182,6 +182,12 @@ These let you play with the theme colours and generate the required files.
 ### Bionic Theme
 <img src="THEMES/Bionic_Theme/screenshot1.png" width="240px"> <img src="THEMES/Bionic_Theme/screenshot2.png" width="240px"> <img src="THEMES/Bionic_Theme/screenshot3.png" width="240px">
 
+### Debian Light
+<img src="THEMES/debian_light/screenshot1.png" width="240px"> <img src="THEMES/debian_light/screenshot2.png" width="240px"> <img src="THEMES/debian_light/screenshot3.png" width="240px">
+
+### Debian Dark
+<img src="THEMES/debian_dark/screenshot1.png" width="240px"> <img src="THEMES/debian_dark/screenshot2.png" width="240px"> <img src="THEMES/debian_dark/screenshot3.png" width="240px">
+
 ## Description of an EdgeTX theme
 
 A theme for EdgeTX consists minimally of 5 files, all located in a dedicated subfolder (in the example here `themename`):
