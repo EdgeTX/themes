@@ -1,0 +1,17 @@
+---
+summary:
+  name: Hexshade Green
+  author: Simon Antonio
+  info: Dark hexagon inspired theme with a retro vibe
+colors:
+  PRIMARY1: 0x00FF88
+  PRIMARY2: 0x0A0F14
+  PRIMARY3: 0xCCFFEE
+  SECONDARY1: 0x44AA77
+  SECONDARY2: 0x1E3A2C
+  SECONDARY3: 0x0D1A1E
+  FOCUS: 0x00FFAA
+  EDIT: 0xAAFFDD
+  ACTIVE: 0x0A2A1A
+  WARNING: 0xFF8800
+  DISABLED: 0x4A5F52
