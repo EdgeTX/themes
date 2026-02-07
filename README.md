@@ -15,6 +15,7 @@ You have an option to create themes with easy-to-use online theme file creators 
 - [EdgeTX Theme Creator](https://edriskus.github.io/edgetx-theme-creator/) by edriskus
 - [EdgeTX Theme yml thingie](https://qwad.se/edgetx-theme-yml-thingie/) by Mattias Kallio
 - [EdgeTX Theme Photoshop Template](https://thinkingpixels.com/downloads/EdgeTX_2.8_Theme_Template_by_GhostBranchFPV.psd) by GhostBranchFPV
+- [EdgeTX Theme Designer](https://edge-tx-theme-creator.vercel.app/) by [Giancarlo Monastero](https://github.com/giancarlomonastero-ui/EdgeTX-Theme-Creator)
 
 These let you play with the theme colours and generate the required files.
 
