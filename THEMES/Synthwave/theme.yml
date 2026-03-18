@@ -1,0 +1,16 @@
+summary: 
+  name: Synthwave
+  author: Robotgoat
+  info: Retro synthwave style theme
+colors:
+  PRIMARY1: 0xF887FF
+  PRIMARY2: 0x8E0D4E
+  PRIMARY3: 0xE00000
+  SECONDARY1: 0xF47C3C
+  SECONDARY2: 0x8C8C8C
+  SECONDARY3: 0x6A5580
+  FOCUS: 0x2D1248
+  EDIT: 0x8C8C8C
+  ACTIVE: 0x6F0027
+  WARNING: 0xFFC400
+  DISABLED: 0x000000

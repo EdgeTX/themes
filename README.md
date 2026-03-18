@@ -193,6 +193,9 @@ The EdgeTX Theme Creator by edriskus is unfortunately taken offline and is not a
 ### Hexshade Green
 <img src="THEMES/Hexshade_Green/screenshot1.png" width="240px"> <img src="THEMES/Hexshade_Green/screenshot2.png" width="240px"> <img src="THEMES/Hexshade_Green/screenshot3.png" width="240px">
 
+### Synthwave
+<img src="THEMES/Synthwave/screenshot1.png" width="240px"> <img src="THEMES/Synthwave/screenshot2.png" width="240px"> <img src="THEMES/Synthwave/screenshot3.png" width="240px">
+
 
 ## Description of an EdgeTX theme
 
