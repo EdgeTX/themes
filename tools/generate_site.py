@@ -169,6 +169,60 @@ def render_page(themes: list[dict]) -> str:
       --accent: #2ea043;
       --accent-hover: #3fb950;
       --radius: 8px;
+      --card-hover-border: #58a6ff;
+      --carousel-bg: #0d1117;
+      --carousel-placeholder-bg: #1c2128;
+      --btn-hover-bg: #21262d;
+      --dl-theme-color: #3fb950;
+      --dl-theme-border: #2ea04366;
+      --swatch-border: rgba(255,255,255,0.1);
+      --dot: rgba(255,255,255,0.35);
+      --dot-hover: rgba(255,255,255,0.65);
+      --dot-active: rgba(255,255,255,0.9);
+      --lb-fg: #e6edf3;
+      --lb-fg-muted: #8b949e;
+      --lb-btn-bg: #21262d;
+      --lb-btn-border: #30363d;
+    }}
+    :root[data-theme="light"] {{
+      --bg: #ffffff;
+      --surface: #f6f8fa;
+      --border: #d0d7de;
+      --text: #1f2328;
+      --text-muted: #656d76;
+      --accent: #1a7f37;
+      --accent-hover: #2da44e;
+      --card-hover-border: #0969da;
+      --carousel-bg: #eaeef2;
+      --carousel-placeholder-bg: #d0d7de;
+      --btn-hover-bg: #eaeef2;
+      --dl-theme-color: #1a7f37;
+      --dl-theme-border: #2da44e66;
+      --swatch-border: rgba(0,0,0,0.1);
+      --dot: rgba(0,0,0,0.35);
+      --dot-hover: rgba(0,0,0,0.65);
+      --dot-active: rgba(0,0,0,0.9);
+    }}
+    @media (prefers-color-scheme: light) {{
+      :root:not([data-theme="dark"]) {{
+        --bg: #ffffff;
+        --surface: #f6f8fa;
+        --border: #d0d7de;
+        --text: #1f2328;
+        --text-muted: #656d76;
+        --accent: #1a7f37;
+        --accent-hover: #2da44e;
+        --card-hover-border: #0969da;
+        --carousel-bg: #eaeef2;
+        --carousel-placeholder-bg: #d0d7de;
+        --btn-hover-bg: #eaeef2;
+        --dl-theme-color: #1a7f37;
+        --dl-theme-border: #2da44e66;
+        --swatch-border: rgba(0,0,0,0.1);
+        --dot: rgba(0,0,0,0.35);
+        --dot-hover: rgba(0,0,0,0.65);
+        --dot-active: rgba(0,0,0,0.9);
+      }}
     }}
 
     body {{
@@ -239,7 +293,7 @@ def render_page(themes: list[dict]) -> str:
       white-space: nowrap;
       transition: color 0.15s, border-color 0.15s;
     }}
-    .anim-toggle:hover {{ color: var(--text); border-color: #58a6ff; }}
+    .anim-toggle:hover {{ color: var(--text); border-color: var(--card-hover-border); }}
     .anim-toggle.paused {{ color: var(--text-muted); }}
 
     /* Grid */
@@ -269,17 +323,17 @@ def render_page(themes: list[dict]) -> str:
       flex-direction: column;
       transition: border-color 0.15s;
     }}
-    .card:hover {{ border-color: #58a6ff; }}
+    .card:hover {{ border-color: var(--card-hover-border); }}
 
     /* Carousel */
     .carousel {{
       position: relative;
       width: 100%;
       aspect-ratio: 4/3;
-      background: #0d1117;
+      background: var(--carousel-bg);
       overflow: hidden;
     }}
-    .carousel-placeholder {{ background: #1c2128; }}
+    .carousel-placeholder {{ background: var(--carousel-placeholder-bg); }}
     .carousel-img {{
       position: absolute;
       inset: 0;
@@ -304,12 +358,12 @@ def render_page(themes: list[dict]) -> str:
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.35);
+      background: var(--dot);
       transition: background 0.3s, transform 0.15s;
       cursor: pointer;
     }}
-    .dot:hover {{ background: rgba(255,255,255,0.65); transform: scale(1.4); }}
-    .dot.active {{ background: rgba(255,255,255,0.9); transform: scale(1.3); }}
+    .dot:hover {{ background: var(--dot-hover); transform: scale(1.4); }}
+    .dot.active {{ background: var(--dot-active); transform: scale(1.3); }}
     .card-body {{
       padding: 14px;
       display: flex;
@@ -343,7 +397,7 @@ def render_page(themes: list[dict]) -> str:
       width: 20px;
       height: 20px;
       border-radius: 3px;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid var(--swatch-border);
       cursor: default;
       flex-shrink: 0;
     }}
@@ -367,9 +421,9 @@ def render_page(themes: list[dict]) -> str:
       text-decoration: none;
       transition: background 0.15s, border-color 0.15s;
     }}
-    .ss-btn:hover:not([disabled]), .dl-theme-btn:hover {{ background: #21262d; border-color: #58a6ff; }}
+    .ss-btn:hover:not([disabled]), .dl-theme-btn:hover {{ background: var(--btn-hover-bg); border-color: var(--card-hover-border); }}
     .ss-btn[disabled] {{ opacity: 0.4; cursor: default; }}
-    .dl-theme-btn {{ border-color: #2ea04366; color: #3fb950; }}
+    .dl-theme-btn {{ border-color: var(--dl-theme-border); color: var(--dl-theme-color); }}
     .dl-theme-btn:hover {{ border-color: var(--accent-hover) !important; }}
 
     /* Lightbox */
@@ -392,11 +446,11 @@ def render_page(themes: list[dict]) -> str:
       align-items: center;
       padding: 8px 12px;
     }}
-    .lb-title {{ font-size: 0.95rem; font-weight: 600; }}
+    .lb-title {{ font-size: 0.95rem; font-weight: 600; color: var(--lb-fg); }}
     .lb-close {{
       background: none;
       border: none;
-      color: var(--text);
+      color: var(--lb-fg);
       font-size: 1.5rem;
       cursor: pointer;
       line-height: 1;
@@ -423,16 +477,16 @@ def render_page(themes: list[dict]) -> str:
       align-items: center;
     }}
     .lb-nav button {{
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text);
+      background: var(--lb-btn-bg);
+      border: 1px solid var(--lb-btn-border);
+      color: var(--lb-fg);
       padding: 6px 16px;
       border-radius: var(--radius);
       cursor: pointer;
       font-size: 0.85rem;
     }}
     .lb-nav button:disabled {{ opacity: 0.3; cursor: default; }}
-    .lb-counter {{ color: var(--text-muted); font-size: 0.85rem; }}
+    .lb-counter {{ color: var(--lb-fg-muted); font-size: 0.85rem; }}
   </style>
 </head>
 <body>
@@ -441,6 +495,7 @@ def render_page(themes: list[dict]) -> str:
     <input class="search" type="search" id="search" placeholder="Search themes…" aria-label="Search themes">
     <button class="anim-toggle" id="anim-toggle" title="Toggle carousel animations">Animations: On</button>
     <button class="anim-toggle" id="reset-btn" title="Reset all carousels to first image">Reset to Logos</button>
+    <button class="anim-toggle" id="theme-toggle" title="Toggle light/dark mode">Theme: Dark</button>
     <a class="dl-btn" href="{DOWNLOAD_ALL_URL}" download>Download All Themes</a>
   </header>
 
@@ -588,6 +643,22 @@ def render_page(themes: list[dict]) -> str:
     }});
 
     applyAnimState();
+
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+    let isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+
+    function applyTheme(dark) {{
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      themeBtn.textContent = dark ? 'Theme: Dark' : 'Theme: Light';
+      isDark = dark;
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    }}
+
+    applyTheme(isDark);
+    themeBtn.addEventListener('click', () => applyTheme(!isDark));
 
     // Lightbox
     let lbImages = [], lbIdx = 0;
