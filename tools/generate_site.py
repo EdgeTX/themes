@@ -179,6 +179,10 @@ def render_page(themes: list[dict]) -> str:
       --dot: rgba(255,255,255,0.35);
       --dot-hover: rgba(255,255,255,0.65);
       --dot-active: rgba(255,255,255,0.9);
+      --lb-fg: #e6edf3;
+      --lb-fg-muted: #8b949e;
+      --lb-btn-bg: #21262d;
+      --lb-btn-border: #30363d;
     }}
     :root[data-theme="light"] {{
       --bg: #ffffff;
@@ -442,11 +446,11 @@ def render_page(themes: list[dict]) -> str:
       align-items: center;
       padding: 8px 12px;
     }}
-    .lb-title {{ font-size: 0.95rem; font-weight: 600; }}
+    .lb-title {{ font-size: 0.95rem; font-weight: 600; color: var(--lb-fg); }}
     .lb-close {{
       background: none;
       border: none;
-      color: var(--text);
+      color: var(--lb-fg);
       font-size: 1.5rem;
       cursor: pointer;
       line-height: 1;
@@ -473,16 +477,16 @@ def render_page(themes: list[dict]) -> str:
       align-items: center;
     }}
     .lb-nav button {{
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text);
+      background: var(--lb-btn-bg);
+      border: 1px solid var(--lb-btn-border);
+      color: var(--lb-fg);
       padding: 6px 16px;
       border-radius: var(--radius);
       cursor: pointer;
       font-size: 0.85rem;
     }}
     .lb-nav button:disabled {{ opacity: 0.3; cursor: default; }}
-    .lb-counter {{ color: var(--text-muted); font-size: 0.85rem; }}
+    .lb-counter {{ color: var(--lb-fg-muted); font-size: 0.85rem; }}
   </style>
 </head>
 <body>
