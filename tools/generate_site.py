@@ -176,6 +176,9 @@ def render_page(themes: list[dict]) -> str:
       --dl-theme-color: #3fb950;
       --dl-theme-border: #2ea04366;
       --swatch-border: rgba(255,255,255,0.1);
+      --dot: rgba(255,255,255,0.35);
+      --dot-hover: rgba(255,255,255,0.65);
+      --dot-active: rgba(255,255,255,0.9);
     }}
     :root[data-theme="light"] {{
       --bg: #ffffff;
@@ -192,6 +195,9 @@ def render_page(themes: list[dict]) -> str:
       --dl-theme-color: #1a7f37;
       --dl-theme-border: #2da44e66;
       --swatch-border: rgba(0,0,0,0.1);
+      --dot: rgba(0,0,0,0.35);
+      --dot-hover: rgba(0,0,0,0.65);
+      --dot-active: rgba(0,0,0,0.9);
     }}
     @media (prefers-color-scheme: light) {{
       :root:not([data-theme="dark"]) {{
@@ -209,6 +215,9 @@ def render_page(themes: list[dict]) -> str:
         --dl-theme-color: #1a7f37;
         --dl-theme-border: #2da44e66;
         --swatch-border: rgba(0,0,0,0.1);
+        --dot: rgba(0,0,0,0.35);
+        --dot-hover: rgba(0,0,0,0.65);
+        --dot-active: rgba(0,0,0,0.9);
       }}
     }}
 
@@ -345,12 +354,12 @@ def render_page(themes: list[dict]) -> str:
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.35);
+      background: var(--dot);
       transition: background 0.3s, transform 0.15s;
       cursor: pointer;
     }}
-    .dot:hover {{ background: rgba(255,255,255,0.65); transform: scale(1.4); }}
-    .dot.active {{ background: rgba(255,255,255,0.9); transform: scale(1.3); }}
+    .dot:hover {{ background: var(--dot-hover); transform: scale(1.4); }}
+    .dot.active {{ background: var(--dot-active); transform: scale(1.3); }}
     .card-body {{
       padding: 14px;
       display: flex;
