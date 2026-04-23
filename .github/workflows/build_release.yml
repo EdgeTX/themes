@@ -121,6 +121,7 @@ jobs:
           tag_name: latest
           name: "Latest Themes Package"
           prerelease: false
+          make_latest: true
           body: ${{ needs.generate-changelog.outputs.changelog }}
           files: release/all/edgetx-themes.zip
 
@@ -159,5 +160,6 @@ jobs:
           tag_name: individual-themes
           name: "Individual Theme Packages"
           prerelease: false
+          make_latest: false
           body: ${{ needs.generate-changelog.outputs.changelog }}
           files: release/individual/*.zip
