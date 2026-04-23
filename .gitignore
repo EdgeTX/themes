@@ -7,6 +7,10 @@
 ###########################
 build/
 
+# Generated theme gallery (local preview only) #
+#################################################
+site/
+
 # OS generated files #
 ######################
 .DS_Store
