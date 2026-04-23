@@ -1,0 +1,30 @@
+name: Deploy Theme Gallery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'THEMES/**'
+      - 'tools/generate_site.py'
+      - '.github/workflows/gh-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Generate site
+        run: uv run --with pyyaml tools/generate_site.py --themes-dir THEMES --output-dir site
+
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true

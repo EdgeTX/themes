@@ -1,0 +1,622 @@
+#!/usr/bin/env python3
+"""Generate a static HTML theme gallery for EdgeTX themes."""
+
+import argparse
+import html
+import json
+import shutil
+import sys
+from pathlib import Path
+
+try:
+    import yaml
+except ImportError:
+    print("PyYAML required: pip install pyyaml", file=sys.stderr)
+    sys.exit(1)
+
+COLOR_KEYS = [
+    "PRIMARY1", "PRIMARY2", "PRIMARY3",
+    "SECONDARY1", "SECONDARY2", "SECONDARY3",
+    "FOCUS", "EDIT", "ACTIVE", "WARNING", "DISABLED",
+]
+
+DOWNLOAD_ALL_URL = (
+    "https://github.com/EdgeTX/themes/releases/latest/download/edgetx-themes.zip"
+)
+RELEASE_BASE_URL = (
+    "https://github.com/EdgeTX/themes/releases/download/individual-themes"
+)
+
+
+def hex_to_css(value) -> str:
+    """Convert YAML-parsed 0xRRGGBB (int or str) to #rrggbb."""
+    if isinstance(value, int):
+        return "#{:06x}".format(value)
+    v = str(value).strip()
+    if v.startswith(("0x", "0X")):
+        return "#" + v[2:].zfill(6)
+    return v
+
+
+def load_theme(theme_dir: Path) -> dict | None:
+    yml_path = theme_dir / "theme.yml"
+    if not yml_path.exists():
+        return None
+    with yml_path.open(encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    summary = data.get("summary", {})
+    colors_raw = data.get("colors", {})
+    colors = {k: hex_to_css(v) for k, v in colors_raw.items()}
+
+    has_logo = (theme_dir / "logo.png").exists()
+
+    screenshots = [
+        f"screenshot{i}.png"
+        for i in range(1, 4)
+        if (theme_dir / f"screenshot{i}.png").exists()
+    ]
+
+    hero = "logo.png" if has_logo else (screenshots[0] if screenshots else None)
+
+    return {
+        "dir_name": theme_dir.name,
+        "name": summary.get("name", theme_dir.name),
+        "author": summary.get("author", ""),
+        "info": summary.get("info", ""),
+        "colors": colors,
+        "screenshots": screenshots,
+        "hero": hero,
+    }
+
+
+def copy_images(theme: dict, theme_dir: Path, out_themes_dir: Path) -> None:
+    dest = out_themes_dir / theme["dir_name"]
+    dest.mkdir(parents=True, exist_ok=True)
+    if theme["hero"]:
+        shutil.copy2(theme_dir / theme["hero"], dest / theme["hero"])
+    for ss in theme["screenshots"]:
+        shutil.copy2(theme_dir / ss, dest / ss)
+
+
+def render_card(theme: dict) -> str:
+    e = html.escape
+    dir_name = e(theme["dir_name"])
+    name = e(theme["name"])
+    author = e(theme["author"])
+    info = e(theme["info"])
+
+    # Build ordered image list: hero first, then remaining screenshots
+    carousel_images = []
+    if theme["hero"]:
+        carousel_images.append(theme["hero"])
+    for ss in theme["screenshots"]:
+        if ss != theme["hero"]:
+            carousel_images.append(ss)
+
+    if carousel_images:
+        imgs = "".join(
+            f'<img class="carousel-img{"  active" if i == 0 else ""}" '
+            f'src="themes/{dir_name}/{e(img)}" alt="{name}" loading="lazy">\n'
+            for i, img in enumerate(carousel_images)
+        )
+        dots = (
+            '<div class="carousel-dots">'
+            + "".join(
+                f'<span class="dot{"  active" if i == 0 else ""}"></span>'
+                for i in range(len(carousel_images))
+            )
+            + "</div>"
+        ) if len(carousel_images) > 1 else ""
+        carousel_html = f'<div class="carousel" data-count="{len(carousel_images)}">{imgs}{dots}</div>'
+    else:
+        carousel_html = '<div class="carousel carousel-placeholder"></div>'
+
+    swatches = "".join(
+        f'<div class="swatch" style="background:{theme["colors"].get(key, "#888")}" '
+        f'title="{e(key)}: {e(theme["colors"].get(key, ""))}"></div>'
+        for key in COLOR_KEYS
+    )
+
+    screenshots_json = json.dumps(
+        [f"themes/{dir_name}/{ss}" for ss in theme["screenshots"]]
+    )
+    ss_btn = (
+        f'<button class="ss-btn" onclick=\'openLightbox({screenshots_json},"{name}")\''
+        f' {"" if theme["screenshots"] else "disabled"}'
+        f'>Screenshots ({len(theme["screenshots"])})</button>'
+    )
+
+    return f"""
+    <div class="card" data-name="{name.lower()}" data-author="{author.lower()}">
+      {carousel_html}
+      <div class="card-body">
+        <h2 class="card-name">{name}</h2>
+        <p class="card-author">{author}</p>
+        {"" if not info else f'<p class="card-info">{info}</p>'}
+        <div class="swatches">{swatches}</div>
+        <div class="card-actions">{ss_btn}<a class="dl-theme-btn" href="{RELEASE_BASE_URL}/{theme['dir_name']}.zip">Download</a></div>
+      </div>
+    </div>"""
+
+
+def render_page(themes: list[dict]) -> str:
+    cards = "\n".join(render_card(t) for t in themes)
+    count = len(themes)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EdgeTX Theme Gallery</title>
+  <style>
+    *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
+
+    :root {{
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #2ea043;
+      --accent-hover: #3fb950;
+      --radius: 8px;
+    }}
+
+    body {{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }}
+
+    /* Header */
+    .site-header {{
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }}
+    .site-title {{
+      font-size: 1.1rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }}
+    .site-title span {{
+      color: var(--text-muted);
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin-left: 8px;
+    }}
+    .search {{
+      flex: 1;
+      min-width: 180px;
+      max-width: 360px;
+      padding: 7px 12px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.9rem;
+    }}
+    .search::placeholder {{ color: var(--text-muted); }}
+    .search:focus {{ outline: none; border-color: var(--accent); }}
+    .dl-btn {{
+      margin-left: auto;
+      padding: 7px 16px;
+      border-radius: var(--radius);
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.15s;
+    }}
+    .dl-btn:hover {{ background: var(--accent-hover); }}
+    .anim-toggle {{
+      padding: 7px 12px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+    }}
+    .anim-toggle:hover {{ color: var(--text); border-color: #58a6ff; }}
+    .anim-toggle.paused {{ color: var(--text-muted); }}
+
+    /* Grid */
+    .grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 24px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }}
+    .no-results {{
+      grid-column: 1 / -1;
+      text-align: center;
+      color: var(--text-muted);
+      padding: 60px 0;
+      font-size: 1rem;
+    }}
+
+    /* Card */
+    .card {{
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.15s;
+    }}
+    .card:hover {{ border-color: #58a6ff; }}
+
+    /* Carousel */
+    .carousel {{
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: #0d1117;
+      overflow: hidden;
+    }}
+    .carousel-placeholder {{ background: #1c2128; }}
+    .carousel-img {{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }}
+    .carousel-img.active {{ opacity: 1; }}
+    body.animations-paused .carousel-img {{ transition: none; }}
+    .carousel-dots {{
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      pointer-events: none;
+    }}
+    .dot {{
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.35);
+      transition: background 0.3s;
+    }}
+    .dot.active {{ background: rgba(255,255,255,0.9); }}
+    .card-body {{
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }}
+    .card-name {{
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }}
+    .card-author {{
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }}
+    .card-info {{
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }}
+
+    /* Swatches */
+    .swatches {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 2px;
+    }}
+    .swatch {{
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      border: 1px solid rgba(255,255,255,0.1);
+      cursor: default;
+      flex-shrink: 0;
+    }}
+
+    .card-actions {{
+      margin-top: auto;
+      padding-top: 4px;
+      display: flex;
+      gap: 6px;
+    }}
+    .ss-btn, .dl-theme-btn {{
+      flex: 1;
+      padding: 7px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      font-size: 0.8rem;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s;
+    }}
+    .ss-btn:hover:not([disabled]), .dl-theme-btn:hover {{ background: #21262d; border-color: #58a6ff; }}
+    .ss-btn[disabled] {{ opacity: 0.4; cursor: default; }}
+    .dl-theme-btn {{ border-color: #2ea04366; color: #3fb950; }}
+    .dl-theme-btn:hover {{ border-color: var(--accent-hover) !important; }}
+
+    /* Lightbox */
+    .lb-overlay {{
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }}
+    .lb-overlay.active {{ display: flex; }}
+    .lb-header {{
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+    }}
+    .lb-title {{ font-size: 0.95rem; font-weight: 600; }}
+    .lb-close {{
+      background: none;
+      border: none;
+      color: var(--text);
+      font-size: 1.5rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px 8px;
+    }}
+    .lb-img-wrap {{
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 8px;
+    }}
+    .lb-img {{
+      max-width: 100%;
+      max-height: 70vh;
+      border-radius: var(--radius);
+      display: block;
+    }}
+    .lb-nav {{
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+      align-items: center;
+    }}
+    .lb-nav button {{
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 16px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 0.85rem;
+    }}
+    .lb-nav button:disabled {{ opacity: 0.3; cursor: default; }}
+    .lb-counter {{ color: var(--text-muted); font-size: 0.85rem; }}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-title">EdgeTX Theme Gallery<span id="count-label">{count} themes</span></div>
+    <input class="search" type="search" id="search" placeholder="Search themes…" aria-label="Search themes">
+    <button class="anim-toggle" id="anim-toggle" title="Toggle carousel animations">Animations: On</button>
+    <button class="anim-toggle" id="reset-btn" title="Reset all carousels to first image">Reset to Logos</button>
+    <a class="dl-btn" href="{DOWNLOAD_ALL_URL}" download>Download All Themes</a>
+  </header>
+
+  <main class="grid" id="grid">
+    {cards}
+    <div class="no-results" id="no-results" style="display:none">No themes match your search.</div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lb-overlay" id="lb" role="dialog" aria-modal="true">
+    <div class="lb-header">
+      <span class="lb-title" id="lb-title"></span>
+      <button class="lb-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+    </div>
+    <div class="lb-img-wrap">
+      <img class="lb-img" id="lb-img" src="" alt="">
+    </div>
+    <nav class="lb-nav">
+      <button id="lb-prev" onclick="lbStep(-1)">&#8592; Prev</button>
+      <span class="lb-counter" id="lb-counter"></span>
+      <button id="lb-next" onclick="lbStep(1)">Next &#8594;</button>
+    </nav>
+  </div>
+
+  <script>
+    // Search
+    const searchEl = document.getElementById('search');
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const noResults = document.getElementById('no-results');
+    const countLabel = document.getElementById('count-label');
+    const total = cards.length;
+
+    searchEl.addEventListener('input', () => {{
+      const q = searchEl.value.toLowerCase().trim();
+      let visible = 0;
+      cards.forEach(c => {{
+        const match = !q || c.dataset.name.includes(q) || c.dataset.author.includes(q);
+        c.style.display = match ? '' : 'none';
+        if (match) visible++;
+      }});
+      noResults.style.display = visible === 0 ? '' : 'none';
+      countLabel.textContent = q ? `${{visible}} of ${{total}} themes` : `${{total}} themes`;
+    }});
+
+    // Carousels
+    const INTERVAL = 3500;
+    let timers = [];
+
+    function advanceCarousel(imgs, dots, state) {{
+      const next = (state.idx + 1) % imgs.length;
+      imgs[state.idx].classList.remove('active');
+      imgs[next].classList.add('active');
+      if (dots.length) {{
+        dots[state.idx].classList.remove('active');
+        dots[next].classList.add('active');
+      }}
+      state.idx = next;
+    }}
+
+    function startCarousels() {{
+      document.querySelectorAll('.carousel[data-count]').forEach((el, i) => {{
+        const imgs = el.querySelectorAll('.carousel-img');
+        const dots = el.querySelectorAll('.dot');
+        if (imgs.length < 2) return;
+        const state = {{ idx: 0 }};
+        // Stagger start so cards don't all flip at once
+        const t = setTimeout(() => {{
+          const interval = setInterval(() => advanceCarousel(imgs, dots, state), INTERVAL);
+          timers.push(interval);
+        }}, i * (INTERVAL / Math.max(total, 1)));
+        timers.push(t);
+      }});
+    }}
+
+    function stopCarousels() {{
+      timers.forEach(clearTimeout);
+      timers = [];
+    }}
+
+    // Animation toggle
+    const animBtn = document.getElementById('anim-toggle');
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let animPaused = localStorage.getItem('anim-paused') === 'true' || prefersReduced;
+
+    function applyAnimState() {{
+      document.body.classList.toggle('animations-paused', animPaused);
+      animBtn.textContent = animPaused ? 'Animations: Off' : 'Animations: On';
+      animBtn.classList.toggle('paused', animPaused);
+      if (animPaused) stopCarousels(); else startCarousels();
+    }}
+
+    function resetCarousels() {{
+      stopCarousels();
+      document.querySelectorAll('.carousel[data-count]').forEach(el => {{
+        el.querySelectorAll('.carousel-img').forEach((img, i) => img.classList.toggle('active', i === 0));
+        el.querySelectorAll('.dot').forEach((dot, i) => dot.classList.toggle('active', i === 0));
+      }});
+      if (!animPaused) startCarousels();
+    }}
+
+    document.getElementById('reset-btn').addEventListener('click', resetCarousels);
+
+    animBtn.addEventListener('click', () => {{
+      animPaused = !animPaused;
+      localStorage.setItem('anim-paused', animPaused);
+      applyAnimState();
+    }});
+
+    applyAnimState();
+
+    // Lightbox
+    let lbImages = [], lbIdx = 0;
+
+    function openLightbox(images, name) {{
+      lbImages = images;
+      lbIdx = 0;
+      document.getElementById('lb-title').textContent = name;
+      renderLb();
+      document.getElementById('lb').classList.add('active');
+      document.addEventListener('keydown', lbKey);
+    }}
+
+    function closeLightbox() {{
+      document.getElementById('lb').classList.remove('active');
+      document.removeEventListener('keydown', lbKey);
+    }}
+
+    function renderLb() {{
+      document.getElementById('lb-img').src = lbImages[lbIdx];
+      document.getElementById('lb-img').alt = `Screenshot ${{lbIdx + 1}}`;
+      document.getElementById('lb-counter').textContent = `${{lbIdx + 1}} / ${{lbImages.length}}`;
+      document.getElementById('lb-prev').disabled = lbIdx === 0;
+      document.getElementById('lb-next').disabled = lbIdx === lbImages.length - 1;
+    }}
+
+    function lbStep(dir) {{
+      lbIdx = Math.max(0, Math.min(lbImages.length - 1, lbIdx + dir));
+      renderLb();
+    }}
+
+    function lbKey(e) {{
+      if (e.key === 'ArrowLeft') lbStep(-1);
+      else if (e.key === 'ArrowRight') lbStep(1);
+      else if (e.key === 'Escape') closeLightbox();
+    }}
+
+    document.getElementById('lb').addEventListener('click', e => {{
+      if (e.target === e.currentTarget) closeLightbox();
+    }});
+  </script>
+</body>
+</html>"""
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Generate EdgeTX theme gallery site")
+    parser.add_argument("--themes-dir", default="THEMES", help="Path to THEMES directory")
+    parser.add_argument("--output-dir", default="site", help="Output directory")
+    args = parser.parse_args()
+
+    themes_dir = Path(args.themes_dir)
+    output_dir = Path(args.output_dir)
+    out_themes = output_dir / "themes"
+
+    if not themes_dir.is_dir():
+        print(f"Error: themes directory not found: {themes_dir}", file=sys.stderr)
+        sys.exit(1)
+
+    themes = []
+    for d in sorted(themes_dir.iterdir()):
+        if not d.is_dir():
+            continue
+        theme = load_theme(d)
+        if theme is None:
+            continue
+        themes.append(theme)
+        copy_images(theme, d, out_themes)
+
+    themes.sort(key=lambda t: t["name"].lower())
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    index_path = output_dir / "index.html"
+    index_path.write_text(render_page(themes), encoding="utf-8")
+
+    print(f"Generated {len(themes)} theme cards → {index_path}")
+
+
+if __name__ == "__main__":
+    main()

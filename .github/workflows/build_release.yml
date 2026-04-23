@@ -20,14 +20,28 @@ jobs:
       # - name: Validate themes
       #   run: some validation
 
-      - name: Zip the release
-        run: mkdir release && zip -r release/edgetx-themes.zip THEMES
+      - name: Zip releases
+        run: |
+          mkdir -p release/all release/individual
+          zip -r release/all/edgetx-themes.zip THEMES
+          for dir in THEMES/*/; do
+            name=$(basename "$dir")
+            (cd THEMES && zip -r "../release/individual/${name}.zip" "$name")
+          done
 
-      - name: Upload zip package
+      - name: Upload all-themes artifact
         uses: actions/upload-artifact@v7
         with:
           name: themes-latest
-          path: release
+          path: release/all
+          retention-days: 15
+          if-no-files-found: error
+
+      - name: Upload individual-themes artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: themes-individual
+          path: release/individual
           retention-days: 15
           if-no-files-found: error
 
@@ -44,11 +58,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Download artifacts
+      - name: Download artifact
         uses: actions/download-artifact@v8
         with:
           name: themes-latest
-          path: release
+          path: release/all
 
       - name: Update latest tag
         run: |
@@ -66,4 +80,41 @@ jobs:
           tag_name: latest
           name: "Latest Themes Package"
           prerelease: false
-          files: release/edgetx-themes.zip
+          files: release/all/edgetx-themes.zip
+
+  upload-individual:
+    if: github.event_name != 'pull_request'
+    needs: package
+    name: Upload individual theme releases
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Download artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: themes-individual
+          path: release/individual
+
+      - name: Update individual-themes tag
+        run: |
+          git tag -f individual-themes
+          git push -f origin individual-themes
+
+      - name: Delete previous individual-themes release
+        run: gh release delete individual-themes --yes || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload individual theme ZIPs to release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: individual-themes
+          name: "Individual Theme Packages"
+          prerelease: false
+          files: release/individual/*.zip
