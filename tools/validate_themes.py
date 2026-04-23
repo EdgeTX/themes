@@ -23,9 +23,17 @@ from rich.text import Text
 console = Console(highlight=False)
 
 REQUIRED_COLOR_KEYS = [
-    "PRIMARY1", "PRIMARY2", "PRIMARY3",
-    "SECONDARY1", "SECONDARY2", "SECONDARY3",
-    "FOCUS", "EDIT", "ACTIVE", "WARNING", "DISABLED",
+    "PRIMARY1",
+    "PRIMARY2",
+    "PRIMARY3",
+    "SECONDARY1",
+    "SECONDARY2",
+    "SECONDARY3",
+    "FOCUS",
+    "EDIT",
+    "ACTIVE",
+    "WARNING",
+    "DISABLED",
 ]
 OPTIONAL_COLOR_KEYS = ["QM_BG", "QM_FG"]
 ALL_COLOR_KEYS = set(REQUIRED_COLOR_KEYS + OPTIONAL_COLOR_KEYS)
@@ -38,20 +46,15 @@ BACKGROUND_RESOLUTIONS = [
     "background_480x320.png",
     "background_800x480.png",
 ]
-KNOWN_FILES = set(
-    ["theme.yml", "readme.txt"]
-    + REQUIRED_IMAGES
-    + BACKGROUND_RESOLUTIONS
-)
+KNOWN_FILES = set(["theme.yml", "readme.txt"] + REQUIRED_IMAGES + BACKGROUND_RESOLUTIONS)
 
 
 def _is_extra_screenshot(filename: str) -> bool:
     """Return True if filename is a screenshot beyond the required 3 (e.g., screenshot4.png)."""
     return filename.lower().startswith("screenshot") and filename.lower().endswith(".png")
 
-_RGB_RE = re.compile(
-    r"^RGB\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$", re.IGNORECASE
-)
+
+_RGB_RE = re.compile(r"^RGB\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$", re.IGNORECASE)
 _RGB_HEX_RE = re.compile(
     r"^RGB\(\s*(0x[0-9A-Fa-f]{1,2})\s*,\s*(0x[0-9A-Fa-f]{1,2})\s*,\s*(0x[0-9A-Fa-f]{1,2})\s*\)$",
     re.IGNORECASE,
@@ -84,13 +87,14 @@ class Result:
     name: str
     errors: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+    infos: list[str] = field(default_factory=list)
 
     @property
     def ok(self) -> bool:
         return not self.errors
 
 
-def validate_theme(theme_dir: Path) -> Result:
+def validate_theme(theme_dir: Path, check_optional_colors: bool = False) -> Result:
     result = Result(name=theme_dir.name)
 
     # --- theme.yml ---
@@ -133,15 +137,16 @@ def validate_theme(theme_dir: Path) -> Result:
                     " (expected 0xRRGGBB hex or RGB(r,g,b))"
                 )
 
-        for key in OPTIONAL_COLOR_KEYS:
-            if key not in colors:
-                result.warnings.append(
-                    f"theme.yml colors: optional key '{key}' not set (added in EdgeTX 2.12)"
-                )
-            elif not _is_valid_color(colors[key]):
-                result.errors.append(
-                    f"theme.yml colors: invalid value for '{key}': {colors[key]!r}"
-                )
+        if check_optional_colors:
+            for key in OPTIONAL_COLOR_KEYS:
+                if key not in colors:
+                    result.warnings.append(
+                        f"theme.yml colors: optional key '{key}' not set (added in EdgeTX 2.12)"
+                    )
+                elif not _is_valid_color(colors[key]):
+                    result.errors.append(
+                        f"theme.yml colors: invalid value for '{key}': {colors[key]!r}"
+                    )
 
         unknown_keys = set(colors.keys()) - ALL_COLOR_KEYS
         for key in sorted(unknown_keys):
@@ -155,10 +160,10 @@ def validate_theme(theme_dir: Path) -> Result:
     # --- background images ---
     present_bgs = [bg for bg in BACKGROUND_RESOLUTIONS if _find_icase(theme_dir, bg)]
     if not present_bgs:
-        result.warnings.append("no background images present (none of the 5 resolution variants)")
+        result.infos.append("no background images present (none of the 5 resolution variants)")
     elif len(present_bgs) < len(BACKGROUND_RESOLUTIONS):
         missing_bgs = [bg for bg in BACKGROUND_RESOLUTIONS if bg not in present_bgs]
-        result.warnings.append(
+        result.errors.append(
             f"only {len(present_bgs)}/{len(BACKGROUND_RESOLUTIONS)} background resolutions present"
             f" (missing: {', '.join(missing_bgs)})"
         )
@@ -169,12 +174,14 @@ def validate_theme(theme_dir: Path) -> Result:
     unknown = sorted(actual_files - known_lower)
     for uf in unknown:
         if not _is_extra_screenshot(uf):
-            result.warnings.append(f"unexpected file: {uf}")
+            result.infos.append(f"unexpected file: {uf}")
 
     return result
 
 
-def validate_all(themes_dir: Path, single: str | None = None) -> list[Result]:
+def validate_all(
+    themes_dir: Path, single: str | None = None, check_optional_colors: bool = False
+) -> list[Result]:
     if not themes_dir.is_dir():
         console.print(f"[bold red]Error:[/] themes directory not found: {themes_dir}")
         sys.exit(2)
@@ -188,12 +195,13 @@ def validate_all(themes_dir: Path, single: str | None = None) -> list[Result]:
     else:
         dirs = sorted(d for d in themes_dir.iterdir() if d.is_dir())
 
-    return [validate_theme(d) for d in dirs]
+    return [validate_theme(d, check_optional_colors=check_optional_colors) for d in dirs]
 
 
-def print_results(results: list[Result], strict: bool) -> int:
+def print_results(results: list[Result], strict: bool, verbose: bool = False) -> int:
     failed = 0
     warned = 0
+    infoed = 0
 
     for r in results:
         errors_in_strict = r.errors + (r.warnings if strict else [])
@@ -216,6 +224,10 @@ def print_results(results: list[Result], strict: bool) -> int:
             else:
                 console.print(f"    [bold yellow]WARN :[/] {msg}")
                 warned += 1
+        for msg in r.infos:
+            if verbose:
+                console.print(f"    [bold cyan]INFO :[/] {msg}")
+            infoed += 1
 
     total = len(results)
     passed = total - failed
@@ -233,6 +245,11 @@ def print_results(results: list[Result], strict: bool) -> int:
             f"{warned} warning{'s' if warned != 1 else ''}",
             style="yellow" if warned else "",
         )
+    summary.append(", ")
+    summary.append(
+        f"{infoed} info{'s' if infoed != 1 else ''}",
+        style="cyan" if infoed else "",
+    )
     console.print(summary)
 
     return 1 if failed else 0
@@ -262,10 +279,19 @@ def main() -> None:
         action="store_true",
         help="treat warnings as errors (non-zero exit if any warnings)",
     )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        dest="all_colors",
+        help="check QM_BG and QM_FG color keys (added in EdgeTX 2.12)",
+    )
     args = parser.parse_args()
 
-    results = validate_all(args.themes_dir, single=args.theme)
-    sys.exit(print_results(results, strict=args.strict))
+    results = validate_all(
+        args.themes_dir, single=args.theme, check_optional_colors=args.all_colors
+    )
+    sys.exit(print_results(results, strict=args.strict, verbose=args.all_colors))
 
 
 if __name__ == "__main__":
