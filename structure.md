@@ -31,7 +31,9 @@ Please refer to the `example` folder for a reference theme layout.
 
 ## Color variables
 
-There are 11 EdgeTX OS color variables that define the UI look & feel: PRIMARY1, PRIMARY2, PRIMARY3, SECONDARY1, SECONDARY2, SECONDARY3, FOCUS, EDIT, ACTIVE, WARNING, and DISABLED.
+There are 13 EdgeTX OS color variables that define the UI look & feel: PRIMARY1, PRIMARY2, PRIMARY3, SECONDARY1, SECONDARY2, SECONDARY3, FOCUS, EDIT, ACTIVE, WARNING, DISABLED, QM_BG, and QM_FG.
+
+_QM_BG and QM_FG were added in EdgeTX 2.12._
 
 Color values use a 24-bit RGB scheme coded in hex format RRGGBB, where RR is the red component, GG is green, and BB is blue. Each component ranges from 00–FF.
 
@@ -73,6 +75,8 @@ colors:
   ACTIVE:     0xD0D0D0
   WARNING:    0x404040
   DISABLED:   0x808080
+  QM_BG:      0x303030
+  QM_FG:      0xFFFFFF
 ```
 
 Syntax breakdown:
@@ -155,4 +159,10 @@ WARNING
 
 DISABLED
   Disabled elements
+
+QM_BG
+  Quick Menu background
+
+QM_FG
+  Quick Menu foreground
 ```
