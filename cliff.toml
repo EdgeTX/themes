@@ -1,0 +1,25 @@
+[changelog]
+header = ""
+body = """
+{% for group, commits in commits | group_by(attribute="group") -%}
+### {{ group }}
+{% for commit in commits -%}
+- {{ commit.message | split(pat="\\n") | first | trim }}
+{% endfor %}
+{% endfor -%}
+"""
+trim = true
+
+[git]
+conventional_commits = true
+filter_unconventional = false
+sort_commits = "oldest"
+
+commit_parsers = [
+  { message = "^feat", group = "🚀 Features" },
+  { message = "^fix", group = "🐛 Bug Fixes" },
+  { message = "^docs?", group = "📝 Documentation" },
+  { message = "^ci", group = "🔧 CI/CD" },
+  { message = "^chore", group = "🧹 Chores" },
+  { body = ".*", group = "📦 Other" },
+]
