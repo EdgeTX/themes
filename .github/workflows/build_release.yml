@@ -13,15 +13,31 @@ on:
   workflow_dispatch:
 
 jobs:
+  validate:
+    name: Validate themes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+
+      - name: Run theme validator
+        run: uv run tools/validate_themes.py
+
   package:
+    needs: validate
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out the repo
         uses: actions/checkout@v6
-
-      # - name: Validate themes
-      #   run: some validation
 
       - name: Zip releases
         run: |
