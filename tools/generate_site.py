@@ -299,16 +299,17 @@ def render_page(themes: list[dict]) -> str:
       display: flex;
       justify-content: center;
       gap: 5px;
-      pointer-events: none;
     }}
     .dot {{
       width: 6px;
       height: 6px;
       border-radius: 50%;
       background: rgba(255,255,255,0.35);
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.15s;
+      cursor: pointer;
     }}
-    .dot.active {{ background: rgba(255,255,255,0.9); }}
+    .dot:hover {{ background: rgba(255,255,255,0.65); transform: scale(1.4); }}
+    .dot.active {{ background: rgba(255,255,255,0.9); transform: scale(1.3); }}
     .card-body {{
       padding: 14px;
       display: flex;
@@ -486,43 +487,79 @@ def render_page(themes: list[dict]) -> str:
 
     // Carousels
     const INTERVAL = 3500;
-    let timers = [];
+    let globalTimers = []; // cleared by stopCarousels / resetCarousels
+    const carouselEls = Array.from(document.querySelectorAll('.carousel[data-count]'));
 
-    function advanceCarousel(imgs, dots, state) {{
-      const next = (state.idx + 1) % imgs.length;
-      imgs[state.idx].classList.remove('active');
+    // Animation toggle — declared early so initCarousels() can read animPaused
+    const animBtn = document.getElementById('anim-toggle');
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let animPaused = localStorage.getItem('anim-paused') === 'true' || prefersReduced;
+
+    function advanceEl(el) {{
+      const imgs = el.querySelectorAll('.carousel-img');
+      const dots = el.querySelectorAll('.dot');
+      const s = el._cs;
+      const next = (s.idx + 1) % imgs.length;
+      imgs[s.idx].classList.remove('active');
       imgs[next].classList.add('active');
       if (dots.length) {{
-        dots[state.idx].classList.remove('active');
+        dots[s.idx].classList.remove('active');
         dots[next].classList.add('active');
       }}
-      state.idx = next;
+      s.idx = next;
+    }}
+
+    function startOne(el, delay) {{
+      const t = setTimeout(() => {{
+        const iv = setInterval(() => advanceEl(el), INTERVAL);
+        el._cs.interval = iv;
+        globalTimers.push(iv);
+      }}, delay);
+      globalTimers.push(t);
     }}
 
     function startCarousels() {{
-      document.querySelectorAll('.carousel[data-count]').forEach((el, i) => {{
-        const imgs = el.querySelectorAll('.carousel-img');
-        const dots = el.querySelectorAll('.dot');
-        if (imgs.length < 2) return;
-        const state = {{ idx: 0 }};
-        // Stagger start so cards don't all flip at once
-        const t = setTimeout(() => {{
-          const interval = setInterval(() => advanceCarousel(imgs, dots, state), INTERVAL);
-          timers.push(interval);
-        }}, i * (INTERVAL / Math.max(total, 1)));
-        timers.push(t);
+      carouselEls.forEach((el, i) => {{
+        if (el.querySelectorAll('.carousel-img').length < 2) return;
+        startOne(el, i * (INTERVAL / Math.max(carouselEls.length, 1)));
       }});
     }}
 
     function stopCarousels() {{
-      timers.forEach(clearTimeout);
-      timers = [];
+      globalTimers.forEach(clearTimeout);
+      globalTimers = [];
+      carouselEls.forEach(el => {{ if (el._cs) el._cs.interval = null; }});
     }}
 
-    // Animation toggle
-    const animBtn = document.getElementById('anim-toggle');
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let animPaused = localStorage.getItem('anim-paused') === 'true' || prefersReduced;
+    // Jump a carousel directly to a target frame (used by dot clicks)
+    function jumpTo(el, targetIdx) {{
+      const imgs = el.querySelectorAll('.carousel-img');
+      const dots = el.querySelectorAll('.dot');
+      const s = el._cs;
+      if (s.interval) {{ clearInterval(s.interval); s.interval = null; }}
+      imgs[s.idx].classList.remove('active');
+      imgs[targetIdx].classList.add('active');
+      if (dots.length) {{
+        dots[s.idx].classList.remove('active');
+        dots[targetIdx].classList.add('active');
+      }}
+      s.idx = targetIdx;
+      if (!animPaused) {{
+        const iv = setInterval(() => advanceEl(el), INTERVAL);
+        s.interval = iv;
+        globalTimers.push(iv);
+      }}
+    }}
+
+    // Initialise per-carousel state and wire up dot click handlers
+    carouselEls.forEach(el => {{
+      const imgs = el.querySelectorAll('.carousel-img');
+      if (imgs.length < 2) return;
+      el._cs = {{ idx: 0, interval: null }};
+      el.querySelectorAll('.dot').forEach((dot, dotIdx) => {{
+        dot.addEventListener('click', () => jumpTo(el, dotIdx));
+      }});
+    }});
 
     function applyAnimState() {{
       document.body.classList.toggle('animations-paused', animPaused);
@@ -533,9 +570,11 @@ def render_page(themes: list[dict]) -> str:
 
     function resetCarousels() {{
       stopCarousels();
-      document.querySelectorAll('.carousel[data-count]').forEach(el => {{
+      carouselEls.forEach(el => {{
+        if (!el._cs) return;
         el.querySelectorAll('.carousel-img').forEach((img, i) => img.classList.toggle('active', i === 0));
         el.querySelectorAll('.dot').forEach((dot, i) => dot.classList.toggle('active', i === 0));
+        el._cs.idx = 0;
       }});
       if (!animPaused) startCarousels();
     }}
