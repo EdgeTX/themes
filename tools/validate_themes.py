@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-# /// script
-# requires-python = ">=3.10"
-# dependencies = ["pyyaml", "rich"]
-# ///
 """Validate EdgeTX theme directories against the theme specification."""
 
 import argparse
@@ -14,7 +10,7 @@ from pathlib import Path
 try:
     import yaml
 except ImportError:
-    print("PyYAML required. Run: uv run tools/validate_themes.py", file=sys.stderr)
+    print("PyYAML required. Run: uv sync", file=sys.stderr)
     sys.exit(1)
 
 from rich.console import Console

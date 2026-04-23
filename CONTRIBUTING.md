@@ -41,6 +41,9 @@ Before submitting, you can run the same validation checks that CI will run on yo
 From the root of the repository, run:
 
 ```sh
+# Create/update the project virtual environment
+uv sync
+
 # Validate all themes
 uv run tools/validate_themes.py
 
@@ -48,7 +51,7 @@ uv run tools/validate_themes.py
 uv run tools/validate_themes.py --theme my-new-theme
 ```
 
-uv will automatically install the required dependencies on first run — no manual `pip install` needed.
+This installs dependencies from `pyproject.toml` into `.venv`, which keeps CLI tooling and VS Code/Pylance on the same environment.
 
 **Errors** must be fixed before a PR can merge — these include a missing or unparseable `theme.yml`, missing required color keys, invalid color values, or missing required image files (`logo.png`, `screenshot1.png`–`screenshot3.png`).
 

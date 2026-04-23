@@ -11,7 +11,7 @@ from pathlib import Path
 try:
     import yaml
 except ImportError:
-    print("PyYAML required: pip install pyyaml", file=sys.stderr)
+    print("PyYAML required. Run: uv sync", file=sys.stderr)
     sys.exit(1)
 
 COLOR_KEYS = [
