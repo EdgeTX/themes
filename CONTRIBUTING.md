@@ -32,6 +32,28 @@ Then, while running the simulator, click the Screenshot icon to capture the curr
 
 <img src="doc/HowToSimuScreenshot.png" width="250px">
 
+## Validating your theme locally
+
+Before submitting, you can run the same validation checks that CI will run on your pull request.
+
+**Prerequisites:** [Python 3.10+](https://www.python.org/) and [uv](https://docs.astral.sh/uv/getting-started/installation/).
+
+From the root of the repository, run:
+
+```sh
+# Validate all themes
+uv run tools/validate_themes.py
+
+# Validate only your theme
+uv run tools/validate_themes.py --theme my-new-theme
+```
+
+uv will automatically install the required dependencies on first run — no manual `pip install` needed.
+
+**Errors** must be fixed before a PR can merge — these include a missing or unparseable `theme.yml`, missing required color keys, invalid color values, or missing required image files (`logo.png`, `screenshot1.png`–`screenshot3.png`).
+
+**Warnings** flag things that are allowed but worth knowing about, such as missing background resolution variants or the optional `QM_BG`/`QM_FG` color keys added in EdgeTX 2.12. Use `--strict` to treat warnings as errors.
+
 ## Submitting your theme
 
 1. If you don't yet have a GitHub account, [create one](https://github.com/join) (it's free)
