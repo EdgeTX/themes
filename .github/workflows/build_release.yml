@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # - name: Validate themes
       #   run: some validation
@@ -24,7 +24,7 @@ jobs:
         run: mkdir release && zip -r release/edgetx-themes.zip THEMES
 
       - name: Upload zip package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: themes-latest
           path: release
@@ -36,9 +36,11 @@ jobs:
     needs: package
     name: Upload latest release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: themes-latest
           path: release
@@ -47,10 +49,9 @@ jobs:
       #   run: ls -R
 
       - name: Upload binaries to release
-        uses: crowbarmaster/GH-Automatic-Releases@latest
+        uses: softprops/action-gh-release@v2
         with:
-          title: "Latest Themes Package"
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
+          tag_name: latest
+          name: "Latest Themes Package"
           prerelease: false
           files: release/edgetx-themes.zip
