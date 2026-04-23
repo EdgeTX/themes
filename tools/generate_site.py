@@ -38,6 +38,15 @@ def hex_to_css(value) -> str:
     return v
 
 
+def find_file_icase(directory: Path, name: str) -> Path | None:
+    """Return the actual Path of a file matching name case-insensitively, or None."""
+    target = name.lower()
+    for f in directory.iterdir():
+        if f.name.lower() == target:
+            return f
+    return None
+
+
 def load_theme(theme_dir: Path) -> dict | None:
     yml_path = theme_dir / "theme.yml"
     if not yml_path.exists():
@@ -48,15 +57,15 @@ def load_theme(theme_dir: Path) -> dict | None:
     colors_raw = data.get("colors", {})
     colors = {k: hex_to_css(v) for k, v in colors_raw.items()}
 
-    has_logo = (theme_dir / "logo.png").exists()
+    logo_path = find_file_icase(theme_dir, "logo.png")
 
-    screenshots = [
-        f"screenshot{i}.png"
-        for i in range(1, 4)
-        if (theme_dir / f"screenshot{i}.png").exists()
-    ]
+    screenshots = []
+    for i in range(1, 5):
+        ss_path = find_file_icase(theme_dir, f"screenshot{i}.png")
+        if ss_path:
+            screenshots.append(ss_path.name)
 
-    hero = "logo.png" if has_logo else (screenshots[0] if screenshots else None)
+    hero = logo_path.name if logo_path else (screenshots[0] if screenshots else None)
 
     return {
         "dir_name": theme_dir.name,
