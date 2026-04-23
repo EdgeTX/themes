@@ -1,17 +1,63 @@
-# How to contribute to the EdgeTX Themes directory
+# Contributing to EdgeTX Themes
 
-## Did you intend to create a new theme?
-- New themes are always welcome. We simply ask that you ensure that your theme complies with [GitHub's acceptable use policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-hate-speech-and-discrimination).
-- As this is a community project, run by volunteers, we reserve the right to not accept some themes, if sexism, hate, racism or politics is involved. In general we ask everybody to be polite, and keep the language used in mind that young people are being potentially present, respect everyone in the community, and refrain from politically biassed contributions
-- When submitting your theme via a [Pull Request](https://github.com/EdgeTX/themes/pulls), please ensure you have provided all of the [required elements of a theme](https://github.com/EdgeTX/themes?tab=readme-ov-file#description-of-an-edgetx-theme), and have completed the checklist in the pull request. 
+## Community standards
+
+As a community project run by volunteers, we ask all contributors to:
+
+- Keep content family-friendly — young people are part of this community
+- Ensure your theme complies with [GitHub's acceptable use policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-hate-speech-and-discrimination)
+- Be polite and respectful to everyone
+
+We reserve the right to decline submissions that involve sexism, hate speech, racism, or political content.
+
+## Creating a new theme
+
+New themes are always welcome! Before submitting, please note that the EdgeTX theme specification is still evolving — you may be asked to update your submission if the spec changes (e.g. image sizes or YAML structure).
+
+When creating your theme:
+
+1. Review [structure.md](structure.md) for the required file layout and YAML format
+2. Ensure your theme folder includes all 5 required files (`theme.yml`, `logo.png`, `screenshot1.png`, `screenshot2.png`, `screenshot3.png`)
+3. Complete the checklist in the pull request template before submitting
+
+### Taking screenshots with the EdgeTX Simulator
+
+The easiest way to produce screenshots is with the EdgeTX Simulator built into [EdgeTX Companion](http://edgetx.org/getedgetx.html#:~:text=Looking%20for%20EdgeTX%20Companion%3F).
+
+First, configure the screenshot output folder. In Companion, open `Settings` → `Settings...`, navigate to the **Simulator Settings** tab, and set a folder for screenshots:
+
+<img src="doc/SimuScreensShotFolder.png">
+
+Then, while running the simulator, click the Screenshot icon to capture the current screen:
+
+<img src="doc/HowToSimuScreenshot.png" width="250px">
+
+## Submitting your theme
+
+1. If you don't yet have a GitHub account, [create one](https://github.com/join) (it's free)
+2. Fork this repo by clicking **Fork** in the upper right
+3. Create a branch — click the down arrow next to "main", type a name without spaces (e.g. `my-new-theme`), and click **Create branch**
+4. Commit your theme folder to your branch.
+   You can work via the GitHub web interface, or locally:
+   ```sh
+   git clone -b my-new-theme https://github.com/your_username/themes.git ~/edgetx/themes
+   git add THEMES/my-new-theme/
+   git commit -m "feat: add My New Theme"
+   git push
+   ```
+   Windows users looking for a graphical Git client can try [TortoiseGit](https://tortoisegit.org/).
+5. Open a pull request by clicking the **Compare & Pull Request** button in your fork
 
 ## Did you find a bug in a theme?
-- Ensure the bug was not already reported by searching on GitHub under [Issues](https://github.com/EdgeTX/themes/issues).
-- If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/EdgeTX/themes/issues/new). Be sure to include a title and clear description and as much relevant information as possible.
+
+- Check whether it's already been reported under [Issues](https://github.com/EdgeTX/themes/issues)
+- If not, [open a new issue](https://github.com/EdgeTX/themes/issues/new) with a clear title, description, and any relevant details
 
 ## Did you write a patch that fixes a bug?
-- Open a new GitHub pull request with the patch.
-- Ensure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable.
 
-## Did you fix whitespace, format code, or make a purely cosmetic patch?
-- Changes that are cosmetic in nature and do not add anything substantial will generally not be accepted.
+- Open a new pull request with the fix
+- Describe the problem and solution clearly in the PR description, and include the issue number if applicable
+
+## Cosmetic-only changes
+
+Changes that are cosmetic in nature and do not add anything substantial will generally not be accepted.
