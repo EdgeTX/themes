@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # - name: Validate themes
       #   run: some validation
@@ -24,7 +24,7 @@ jobs:
         run: mkdir release && zip -r release/edgetx-themes.zip THEMES
 
       - name: Upload zip package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: themes-latest
           path: release
@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: themes-latest
           path: release
