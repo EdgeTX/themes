@@ -3,11 +3,14 @@ name: Build Release ZIP
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - "**.md"
+    paths:
+      - 'THEMES/**'
+      - '.github/workflows/build_release.yml'
   pull_request:
-    paths-ignore:
-      - "**.md"
+    paths:
+      - 'THEMES/**'
+      - '.github/workflows/build_release.yml'
+  workflow_dispatch:
 
 jobs:
   package:
