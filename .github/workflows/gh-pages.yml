@@ -7,6 +7,11 @@ on:
       - 'THEMES/**'
       - 'tools/generate_site.py'
       - '.github/workflows/gh-pages.yml'
+  pull_request:
+    paths:
+      - 'THEMES/**'
+      - 'tools/generate_site.py'
+      - '.github/workflows/gh-pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -29,11 +34,21 @@ jobs:
       - name: Generate site
         run: uv run --with pyyaml tools/generate_site.py --themes-dir THEMES --output-dir site
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload Pages artifact
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
 
+      - name: Upload PR preview artifact
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview-pr-${{ github.event.pull_request.number }}
+          path: ./site
+
   deploy:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     needs: build
     runs-on: ubuntu-latest
     environment:
