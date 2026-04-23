@@ -168,6 +168,8 @@ def render_page(themes: list[dict]) -> str:
       --text-muted: #8b949e;
       --accent: #2ea043;
       --accent-hover: #3fb950;
+      --blue: #1f6feb;
+      --blue-hover: #388bfd;
       --radius: 8px;
       --card-hover-border: #58a6ff;
       --carousel-bg: #0d1117;
@@ -192,6 +194,8 @@ def render_page(themes: list[dict]) -> str:
       --text-muted: #656d76;
       --accent: #1a7f37;
       --accent-hover: #2da44e;
+      --blue: #0969da;
+      --blue-hover: #0550ae;
       --card-hover-border: #0969da;
       --carousel-bg: #eaeef2;
       --carousel-placeholder-bg: #d0d7de;
@@ -212,6 +216,8 @@ def render_page(themes: list[dict]) -> str:
         --text-muted: #656d76;
         --accent: #1a7f37;
         --accent-hover: #2da44e;
+        --blue: #0969da;
+        --blue-hover: #0550ae;
         --card-hover-border: #0969da;
         --carousel-bg: #eaeef2;
         --carousel-placeholder-bg: #d0d7de;
@@ -269,8 +275,28 @@ def render_page(themes: list[dict]) -> str:
     }}
     .search::placeholder {{ color: var(--text-muted); }}
     .search:focus {{ outline: none; border-color: var(--accent); }}
+    .gh-btn {{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 16px;
+      border-radius: var(--radius);
+      background: var(--blue);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.15s;
+    }}
+    .gh-btn:hover {{ background: var(--blue-hover); }}
+    .repo-btn {{ margin-left: auto; background: #24292f; }}
+    .repo-btn:hover {{ background: #32383f; }}
     .dl-btn {{
-      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: 0;
       padding: 7px 16px;
       border-radius: var(--radius);
       background: var(--accent);
@@ -496,7 +522,9 @@ def render_page(themes: list[dict]) -> str:
     <button class="anim-toggle" id="anim-toggle" title="Toggle carousel animations">Animations: On</button>
     <button class="anim-toggle" id="reset-btn" title="Reset all carousels to first image">Reset to Logos</button>
     <button class="anim-toggle" id="theme-toggle" title="Toggle light/dark mode">Theme: Dark</button>
-    <a class="dl-btn" href="{DOWNLOAD_ALL_URL}" download>Download All Themes</a>
+    <a class="gh-btn repo-btn" href="https://github.com/EdgeTX/themes" target="_blank" rel="noopener"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.26-1.23-.55-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>GitHub Repo</a>
+    <a class="gh-btn" href="https://github.com/EdgeTX/themes/blob/main/CONTRIBUTING.md#submitting-your-theme" target="_blank" rel="noopener"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" fill="currentColor"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M11.78 5.22a.749.749 0 0 1-1.06 1.06L8.75 4.31v5.44a.75.75 0 0 1-1.5 0V4.31L5.28 6.28a.749.749 0 1 1-1.06-1.06l3.25-3.25a.749.749 0 0 1 1.06 0l3.25 3.25Z"/></svg>Submit Theme</a>
+    <a class="dl-btn" href="{DOWNLOAD_ALL_URL}" download><svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" fill="currentColor"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.97a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.779a.749.749 0 1 1 1.06-1.06l1.97 1.97Z"/></svg>Download All Themes</a>
   </header>
 
   <main class="grid" id="grid">
