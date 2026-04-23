@@ -7,4 +7,3 @@
 Have you included all the required elements? 
 1. [ ] Have you included all the [required elements](../../themes/blob/main/structure.md#theme-file-structure) in your theme?
 2. [ ] Are your screenshots in the correct resolution?
-3. [ ] The theme gallery updates automatically when your PR is merged — no manual README edit needed.
