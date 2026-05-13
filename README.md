@@ -2,7 +2,8 @@
 
 For older, EdgeTX v2.5 compatible themes, please [go to the 2.5 branch](../../tree/2.5).
 
-Browse and preview all available themes in the [EdgeTX Theme Gallery](https://edgetx.github.io/themes/).
+
+[![EdgeTX Theme Gallery](doc/edgetx_btn_theme_gallery.png)](https://edgetx.org/themes/)
 
 [Click here](https://github.com/EdgeTX/themes/releases/download/latest/edgetx-themes.zip) to download the latest themes package which you can then copy onto your radio's SD card. Alternatively, check the [latest release](https://github.com/EdgeTX/themes/releases/tag/latest) page for recent changes.
 
