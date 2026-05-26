@@ -1,0 +1,19 @@
+---
+summary: 
+   name: "EdgeTX Clean"
+   author: "IdefixRC"
+   info: "clean, simple version of the EdgeTX default theme"
+colors: 
+   PRIMARY1: 0x000000
+   PRIMARY2: 0xF8FCF8
+   PRIMARY3: 0x083C60
+   SECONDARY1: 0x105C98
+   SECONDARY2: 0xB0E0F0
+   SECONDARY3: 0xE0ECF0
+   FOCUS: 0x10A0E0
+   EDIT: 0x009808
+   ACTIVE: 0xF8DC00
+   WARNING: 0xE00000
+   DISABLED: 0x888C88
+   QM_BG: 0x000000
+   QM_FG: 0xF8FCF8
