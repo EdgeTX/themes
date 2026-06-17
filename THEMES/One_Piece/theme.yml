@@ -1,0 +1,19 @@
+summary:
+  name: "One Piece"
+  author: "LouisWaelkens"
+  info: "one piece inspired layout"
+
+colors:
+  PRIMARY1: 0x000000
+  PRIMARY2: 0xE6D0A5
+  PRIMARY3: 0x083C60
+  SECONDARY1: 0x105C98
+  SECONDARY2: 0x105C98
+  SECONDARY3: 0x5555
+  FOCUS: 0xB2342D
+  EDIT: 0xD4A017
+  ACTIVE: 0xBD9254
+  WARNING: 0xE00000
+  DISABLED: 0x888C88
+  QM_BG: 0x000000
+  QM_FG: 0xF8FCF8
