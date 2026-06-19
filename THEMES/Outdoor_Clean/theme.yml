@@ -1,0 +1,17 @@
+summary:
+  name:   Outdoor_Clean
+  author: Ulrich Habel
+  info:   Light background, blueish style, orange highlights
+
+colors:
+  PRIMARY1:   0x1A2E4A
+  PRIMARY2:   0xF0F2F0
+  PRIMARY3:   0x4A6A8A
+  SECONDARY1: 0x1A2E4A
+  SECONDARY2: 0x8AAAC8
+  SECONDARY3: 0xD8E4F0
+  FOCUS:      0x1A2E4A
+  EDIT:       0x2A4A6A
+  ACTIVE:     0xE8820A
+  WARNING:    0xE8230A
+  DISABLED:   0x8AAAC8
