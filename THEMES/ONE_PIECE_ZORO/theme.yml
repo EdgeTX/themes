@@ -1,0 +1,19 @@
+summary:
+  name: "ONE_PIECE_ZORO"
+  author: "louiswaelkens"
+  info: "One piece zoro inspired theme"
+
+colors:
+  PRIMARY1: 0xFFFFF
+  PRIMARY2: 0x0F2E1D
+  PRIMARY3: 0x083C60
+  SECONDARY1: 0x006400
+  SECONDARY2: 0x0F2E1D
+  SECONDARY3: 0x32CD32
+  FOCUS: 0x008B00
+  EDIT: 0x009808
+  ACTIVE: 0x008B00
+  WARNING: 0xE00000
+  DISABLED: 0x888C88
+  QM_BG: 0x0F2E1D
+  QM_FG: 0x9AFF9A
