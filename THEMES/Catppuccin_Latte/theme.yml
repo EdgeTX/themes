@@ -1,0 +1,19 @@
+---
+summary:
+  name: "Catppuccin Latte"
+  author: "Eleocraft"
+  info: "Theme built around the Catppuccin Latte palette"
+colors:
+  PRIMARY1: 0x4C4F69 # text
+  PRIMARY2: 0xCCD0DA # surface0
+  PRIMARY3: 0x7287FD # lavender
+  SECONDARY1: 0x7C7F93 # overlay2
+  SECONDARY2: 0x9CA0B0 # overlay0
+  SECONDARY3: 0xEFF1F5 # base
+  FOCUS: 0x209FB5 # sapphire
+  EDIT: 0x7287FD # lavender
+  ACTIVE: 0xACB0BE # surface2
+  WARNING: 0xD20F39 # red
+  DISABLED: 0x8C8FA1 # overlay1
+  QM_BG: 0xEFF1F5 # base
+  QM_FG: 0x4C4F69 # text

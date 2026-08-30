@@ -1,0 +1,19 @@
+---
+summary:
+  name: "Catppuccin Mocha"
+  author: "Eleocraft"
+  info: "Theme built around the Catppuccin Mocha palette"
+colors:
+  PRIMARY1: 0xCDD6F4 # text
+  PRIMARY2: 0x313244 # surface0
+  PRIMARY3: 0xB4BEFE # lavender
+  SECONDARY1: 0x9399B2 # overlay2
+  SECONDARY2: 0x6C7086 # overlay0
+  SECONDARY3: 0x1E1E2E # base
+  FOCUS: 0x74C7EC # sapphire
+  EDIT: 0xB4BEFE # lavender
+  ACTIVE: 0x585B70 # surface2
+  WARNING: 0xF38BA8 # red
+  DISABLED: 0x7F849C # overlay1
+  QM_BG: 0x1E1E2E # base
+  QM_FG: 0xCDD6F4 # text

@@ -1,0 +1,19 @@
+---
+summary:
+  name: "Catppuccin Frappe"
+  author: "Eleocraft"
+  info: "Theme built around the Catppuccin Frappe palette"
+colors:
+  PRIMARY1: 0xC6D0F5 # text
+  PRIMARY2: 0x414559 # surface0
+  PRIMARY3: 0xBABBF1 # lavender
+  SECONDARY1: 0x949CBB # overlay2
+  SECONDARY2: 0x737994 # overlay0
+  SECONDARY3: 0x303446 # base
+  FOCUS: 0x85C1DC # sapphire
+  EDIT: 0xBABBF1 # lavender
+  ACTIVE: 0x626880 # surface2
+  WARNING: 0xE78284 # red
+  DISABLED: 0x838BA7 # overlay1
+  QM_BG: 0x303446 # base
+  QM_FG: 0xC6D0F5 # text

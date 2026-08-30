@@ -1,0 +1,19 @@
+---
+summary:
+  name: "Catppuccin Macchiato"
+  author: "Eleocraft"
+  info: "Theme built around the Catppuccin Macchiato palette"
+colors:
+  PRIMARY1: 0xCAD3F5 # text
+  PRIMARY2: 0x363A4F # surface0
+  PRIMARY3: 0xB7BDF8 # lavender
+  SECONDARY1: 0x939AB7 # overlay2
+  SECONDARY2: 0x6E738D # overlay0
+  SECONDARY3: 0x24273A # base
+  FOCUS: 0x7DC4E4 # sapphire
+  EDIT: 0xB7BDF8 # lavender
+  ACTIVE: 0x5B6078 # surface2
+  WARNING: 0xED8796 # red
+  DISABLED: 0x8087A2 # overlay1
+  QM_BG: 0x24273A # base
+  QM_FG: 0xCAD3F5 # text
